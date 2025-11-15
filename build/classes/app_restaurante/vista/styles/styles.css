@@ -5,3 +5,22 @@
 .mainFxmlClass {
 
 }
+
+#imagenFondo{
+    -fx-opacity: 0.4;
+}
+
+#anchorPaneLogin{
+    -fx-background-color: black;
+}
+
+#paneLogin{
+    -fx-background-color: beige;
+    -fx-background-radius: 30px;
+}
+
+#botonIniciarSesion{
+    -fx-background-color: bisque;
+    -fx-background-radius: 20px;
+
+}
