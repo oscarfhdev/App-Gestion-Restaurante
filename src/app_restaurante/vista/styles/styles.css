@@ -1,26 +1,50 @@
-/*
- * Empty Stylesheet file.
- */
 
-.mainFxmlClass {
 
+.colorTextoMarron{
+    -fx-text-fill: #775134;
 }
+
 
 #imagenFondo{
     -fx-opacity: 0.4;
 }
 
+
 #anchorPaneLogin{
     -fx-background-color: black;
 }
+
 
 #paneLogin{
     -fx-background-color: beige;
     -fx-background-radius: 30px;
 }
 
+
 #botonIniciarSesion{
     -fx-background-color: bisque;
     -fx-background-radius: 20px;
+    -fx-border-width: 2px 2px 2px 2px;
+    -fx-border-radius: 20px;
+    -fx-border-color: #775134;
+}
 
+/* El derive al hacer el hover nos cambiar el color muy poco */
+#botonIniciarSesion:hover{
+    -fx-background-color: derive(bisque, -05%); 
+}
+
+.inputMarron{
+    -fx-border-width: 0px 0px 3px 0px;
+    -fx-border-color: #775134;
+    -fx-background-color: transparent;
+}
+
+#paneApagar{
+    -fx-background-color: bisque;
+    -fx-background-radius: 20px;
+}
+
+#paneApagar:hover{
+    -fx-background-color: derive(bisque, -20%); 
 }
