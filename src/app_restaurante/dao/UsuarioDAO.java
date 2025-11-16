@@ -8,7 +8,7 @@ import java.util.List;
 
 public class UsuarioDAO {
 
-    private static final String RUTA_ARCHIVO = "src/app_restaurante/basedatos_txt/usuarios.txt";
+    private static final String RUTA_ARCHIVO = "src/app_restaurante/bbdd_txt/usuarios.txt";
 
     // Constructor: crea el archivo si no existe
     public UsuarioDAO() {

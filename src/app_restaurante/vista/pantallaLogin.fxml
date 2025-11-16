@@ -19,12 +19,12 @@
    <children>
       <ImageView id="imagenFondo" fitHeight="643.0" fitWidth="1085.0" pickOnBounds="true">
          <image>
-            <Image url="@images/fondo_login.jpg" />
+            <Image url="@images/login/fondo_login.jpg" />
          </image>
       </ImageView>
       <ImageView fitHeight="436.0" fitWidth="520.0" layoutX="54.0" layoutY="104.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@images/logoRedondeado.png" />
+            <Image url="@images/login/logoRedondeado.png" />
          </image>
       </ImageView>
       <Pane id="paneLogin" layoutX="543.0" layoutY="154.0" prefHeight="337.0" prefWidth="436.0">
@@ -44,12 +44,12 @@
             </TextField>
             <ImageView fitHeight="50.0" fitWidth="38.0" layoutX="81.0" layoutY="95.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@images/usuario.png" />
+                  <Image url="@images/login/usuario.png" />
                </image>
             </ImageView>
             <ImageView fitHeight="38.0" fitWidth="44.0" layoutX="81.0" layoutY="166.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@images/contrasena.png" />
+                  <Image url="@images/login/contrasena.png" />
                </image>
             </ImageView>
             <Label layoutX="106.0" layoutY="35.0" prefHeight="30.0" prefWidth="224.0" styleClass="colorTextoMarron" text="Inicio de sesión">
@@ -69,7 +69,7 @@
          <children>
             <ImageView fitHeight="30.0" fitWidth="38.0" layoutX="10.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@images/iconoApagar.png" />
+                  <Image url="@images/login/iconoApagar.png" />
                </image>
                <cursor>
                   <Cursor fx:constant="HAND" />
