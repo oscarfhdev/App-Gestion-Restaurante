@@ -2,6 +2,8 @@
 
 <?import java.net.URL?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -19,7 +21,7 @@
       </ImageView>
       <Pane layoutX="-7.0" layoutY="-6.0" prefHeight="45.0" prefWidth="1092.0" style="-fx-background-color: #775134;">
          <children>
-            <Label layoutX="498.0" layoutY="16.0" style="-fx-text-fill: white;" text="16 de nov 23:52" />
+            <Label fx:id="labelFechaHora" layoutX="498.0" layoutY="16.0" style="-fx-text-fill: white;" text="16 de nov 23:52" />
             <ImageView fitHeight="28.0" fitWidth="22.0" layoutX="1056.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@images/comun/iconoEthernet.png" />
@@ -39,6 +41,12 @@
                   <Image url="@images/login/logoRedondeado.png" />
                </image>
             </ImageView>
+            <TableView layoutX="546.0" layoutY="65.0" prefHeight="383.0" prefWidth="303.0">
+              <columns>
+                <TableColumn prefWidth="75.0" text="C1" />
+                <TableColumn prefWidth="75.0" text="C2" />
+              </columns>
+            </TableView>
          </children>
       </Pane>
    </children>
