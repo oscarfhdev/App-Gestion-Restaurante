@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import java.net.URL?>
+<?import javafx.scene.control.CheckBox?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -19,7 +23,7 @@
       </ImageView>
       <Pane layoutX="-7.0" layoutY="-6.0" prefHeight="45.0" prefWidth="1092.0" style="-fx-background-color: #775134;">
          <children>
-            <Label layoutX="498.0" layoutY="16.0" style="-fx-text-fill: white;" text="16 de nov 23:52" />
+            <Label fx:id="labelHora" layoutX="498.0" layoutY="16.0" style="-fx-text-fill: white;" />
             <ImageView fitHeight="28.0" fitWidth="22.0" layoutX="1056.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@images/comun/iconoEthernet.png" />
@@ -30,6 +34,7 @@
                   <Image url="@images/comun/home.png" />
                </image>
             </ImageView>
+            <Label fx:id="labelFecha" layoutX="950.0" layoutY="16.0" style="-fx-text-fill: white;" />
          </children>
       </Pane>
       <Pane id="paneLogin" layoutX="92.0" layoutY="88.0" prefHeight="512.0" prefWidth="901.0">
@@ -39,6 +44,18 @@
                   <Image url="@images/login/logoRedondeado.png" />
                </image>
             </ImageView>
+            <TableView layoutX="546.0" layoutY="65.0" prefHeight="383.0" prefWidth="303.0">
+              <columns>
+                <TableColumn prefWidth="75.0" text="C1" />
+                <TableColumn prefWidth="75.0" text="C2" />
+              </columns>
+            </TableView>
+            <TextField layoutX="90.0" layoutY="111.0" />
+            <TextField layoutX="120.0" layoutY="287.0" />
+            <TextField layoutX="103.0" layoutY="376.0" />
+            <TextField layoutX="90.0" layoutY="186.0" />
+            <CheckBox layoutX="90.0" layoutY="439.0" mnemonicParsing="false" text="CheckBox" />
+            <CheckBox layoutX="78.0" layoutY="412.0" mnemonicParsing="false" text="CheckBox" />
          </children>
       </Pane>
    </children>

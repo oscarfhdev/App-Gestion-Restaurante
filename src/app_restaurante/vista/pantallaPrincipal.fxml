@@ -27,9 +27,9 @@
                   <Image url="@images/comun/iconoEthernet.png" />
                </image>
             </ImageView>
-            <Pane layoutX="14.0" layoutY="9.0" prefHeight="32.0" prefWidth="39.0" style="-fx-background-color: red;">
+            <Pane layoutX="14.0" layoutY="9.0" onMouseClicked="#irALogin" prefHeight="32.0" prefWidth="39.0" style="-fx-background-color: red;">
                <children>
-                  <ImageView fitHeight="29.0" fitWidth="33.0" layoutX="3.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="imagenLogOut" fitHeight="29.0" fitWidth="33.0" layoutX="3.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@images/comun/logout.png" />
                      </image>
