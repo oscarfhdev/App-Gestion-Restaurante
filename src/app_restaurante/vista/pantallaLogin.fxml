@@ -24,10 +24,10 @@
       </ImageView>
       <ImageView fitHeight="436.0" fitWidth="520.0" layoutX="54.0" layoutY="104.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@images/login/logoRedondeado.png" />
+            <Image url="@images/comun/logoRedondeado.png" />
          </image>
       </ImageView>
-      <Pane id="paneLogin" layoutX="543.0" layoutY="154.0" prefHeight="337.0" prefWidth="436.0">
+      <Pane id="paneBeige" layoutX="543.0" layoutY="154.0" prefHeight="337.0" prefWidth="436.0">
          <children>
             <Button id="botonIniciarSesion" fx:id="botonIniciarSesion" layoutX="133.0" layoutY="242.0" mnemonicParsing="false" onMouseClicked="#iniciarSesion" prefHeight="42.0" prefWidth="171.0" text="Iniciar sesión">
                <font>
@@ -37,7 +37,7 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
             </Button>
-            <TextField fx:id="textFieldUsuario" layoutX="131.0" layoutY="93.0" prefHeight="42.0" prefWidth="224.0" promptText="Usuario" styleClass="inputMarron">
+            <TextField fx:id="textFieldUsuario" layoutX="131.0" layoutY="93.0" prefHeight="42.0" prefWidth="224.0" promptText="Usuario" styleClass="inputMarronLogin">
                <font>
                   <Font name="NimbusMonoPS-Regular" size="15.0" />
                </font>
@@ -57,12 +57,12 @@
                   <Font name="DejaVu Sans Bold" size="25.0" />
                </font>
             </Label>
-            <PasswordField fx:id="textFieldContrasena" layoutX="131.0" layoutY="164.0" prefHeight="42.0" prefWidth="224.0" promptText="Contraseña" styleClass="inputMarron">
+            <PasswordField fx:id="textFieldContrasena" layoutX="131.0" layoutY="164.0" prefHeight="42.0" prefWidth="224.0" promptText="Contraseña" styleClass="inputMarronLogin">
                <font>
                   <Font name="NimbusRoman-Bold" size="15.0" />
                </font>
             </PasswordField>
-            <Label fx:id="labelErrorLogin" layoutX="59.0" layoutY="284.0" prefHeight="30.0" prefWidth="319.0" style="-fx-alignment: center;" text="Usuario y/o contraseña incorrectos" textFill="#ff6e6e" visible="false" />
+            <Label fx:id="labelErrorLogin" layoutX="59.0" layoutY="284.0" prefHeight="30.0" prefWidth="319.0" style="-fx-alignment: center;" textFill="#ff6e6e" />
          </children>
       </Pane>
       <Pane id="paneApagar" layoutX="1021.0" layoutY="14.0" onMouseClicked="#cerrarApp" prefHeight="51.0" prefWidth="50.0">

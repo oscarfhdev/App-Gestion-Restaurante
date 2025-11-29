@@ -1,0 +1,2 @@
+a6eb2815-8121-4fc3-be82-3eea0d2bbecd|Administrador|Sistema|admin|admin|true|true
+f05944b7-fe67-4ef1-8260-4ba5862cec8b|Usuario|Invitado|usuario|usuario|false|true

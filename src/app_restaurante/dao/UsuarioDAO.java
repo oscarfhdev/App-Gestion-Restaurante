@@ -1,4 +1,4 @@
-package app_restaurante.dao;
+ package app_restaurante.dao;
 
 import app_restaurante.modelo.Usuario;
 import java.io.*;

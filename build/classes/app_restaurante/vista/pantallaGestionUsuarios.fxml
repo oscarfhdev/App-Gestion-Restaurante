@@ -10,6 +10,7 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
 
 <AnchorPane id="anchorPaneLogin" prefHeight="643.0" prefWidth="1085.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app_restaurante.controlador.PantallaGestionUsuariosControlador">
     <stylesheets>
@@ -23,39 +24,49 @@
       </ImageView>
       <Pane layoutX="-7.0" layoutY="-6.0" prefHeight="45.0" prefWidth="1092.0" style="-fx-background-color: #775134;">
          <children>
-            <Label fx:id="labelHora" layoutX="498.0" layoutY="16.0" style="-fx-text-fill: white;" />
             <ImageView fitHeight="28.0" fitWidth="22.0" layoutX="1056.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@images/comun/iconoEthernet.png" />
                </image>
             </ImageView>
-            <ImageView fitHeight="28.0" fitWidth="28.0" layoutX="14.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@images/comun/home.png" />
-               </image>
-            </ImageView>
-            <Label fx:id="labelFecha" layoutX="950.0" layoutY="16.0" style="-fx-text-fill: white;" />
+            <Pane id="panelIrAHome" layoutX="14.0" layoutY="7.0" onMouseClicked="#irAPantallaPrincipal" prefHeight="37.0" prefWidth="41.0">
+               <children>
+                  <ImageView fx:id="iconoHome" fitHeight="28.0" fitWidth="28.0" layoutX="7.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/comun/home.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Label fx:id="labelHora" layoutX="520.0" layoutY="16.0" styleClass="blancoCentradoNegrita" text="00:00:00" />
+            <Label fx:id="labelFecha" layoutX="964.0" layoutY="16.0" styleClass="blancoCentradoNegrita" text="00/01/0000" />
          </children>
       </Pane>
-      <Pane id="paneLogin" layoutX="92.0" layoutY="88.0" prefHeight="512.0" prefWidth="901.0">
+      <Pane id="paneBeige" layoutX="92.0" layoutY="88.0" prefHeight="512.0" prefWidth="901.0">
          <children>
+            <Label layoutX="306.0" layoutY="26.0" prefHeight="30.0" prefWidth="290.0" styleClass="colorTextoMarron" text="Gestión de Usuarios">
+               <font>
+                  <Font name="DejaVu Sans Bold" size="25.0" />
+               </font>
+            </Label>
             <ImageView fitHeight="125.0" fitWidth="124.0" layoutX="869.0" layoutY="430.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@images/login/logoRedondeado.png" />
+                  <Image url="@images/comun/logoRedondeado.png" />
                </image>
             </ImageView>
-            <TableView layoutX="546.0" layoutY="65.0" prefHeight="383.0" prefWidth="303.0">
+            <TableView layoutX="423.0" layoutY="83.0" prefHeight="383.0" prefWidth="347.0" styleClass="tablaMarron">
               <columns>
-                <TableColumn prefWidth="75.0" text="C1" />
-                <TableColumn prefWidth="75.0" text="C2" />
+                <TableColumn prefWidth="109.0" text="Nombre" />
+                <TableColumn prefWidth="125.0" text="Apellido" />
+                  <TableColumn minWidth="0.0" prefWidth="112.0" text="Usuario" />
               </columns>
             </TableView>
-            <TextField layoutX="90.0" layoutY="111.0" />
-            <TextField layoutX="120.0" layoutY="287.0" />
-            <TextField layoutX="103.0" layoutY="376.0" />
-            <TextField layoutX="90.0" layoutY="186.0" />
-            <CheckBox layoutX="90.0" layoutY="439.0" mnemonicParsing="false" text="CheckBox" />
-            <CheckBox layoutX="78.0" layoutY="412.0" mnemonicParsing="false" text="CheckBox" />
+            <TextField layoutX="138.0" layoutY="121.0" prefHeight="29.0" prefWidth="201.0" promptText="Nombre" styleClass="inputMarron" />
+            <TextField layoutX="138.0" layoutY="245.0" prefHeight="29.0" prefWidth="201.0" promptText="Usuario" styleClass="inputMarron" />
+            <TextField layoutX="138.0" layoutY="306.0" prefHeight="29.0" prefWidth="201.0" promptText="Contraseña" styleClass="inputMarron" />
+            <TextField layoutX="138.0" layoutY="181.0" prefHeight="29.0" prefWidth="201.0" promptText="Apellido" styleClass="inputMarron" />
+            <CheckBox layoutX="137.0" layoutY="413.0" mnemonicParsing="false" styleClass="checkboxMarron" text="Usuario habilidato" />
+            <CheckBox layoutX="137.0" layoutY="374.0" mnemonicParsing="false" styleClass="checkboxMarron" text="Usuario administrador" />
          </children>
       </Pane>
    </children>

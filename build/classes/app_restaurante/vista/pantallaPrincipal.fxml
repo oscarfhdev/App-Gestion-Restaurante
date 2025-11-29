@@ -16,18 +16,18 @@
    <children>
       <ImageView id="imagenFondo" fitHeight="643.0" fitWidth="1085.0" pickOnBounds="true">
          <image>
-            <Image url="@images/login/fondo_login.jpg" />
+            <Image url="@images/pantalla_principal/food.jpg" />
          </image>
       </ImageView>
       <Pane layoutX="-7.0" layoutY="-6.0" prefHeight="45.0" prefWidth="1092.0" style="-fx-background-color: #775134;">
          <children>
-            <Label fx:id="labelHora" layoutX="498.0" layoutY="16.0" style="-fx-text-fill: white;" text="16 de nov 23:52" />
+            <Label fx:id="labelHora" layoutX="520.0" layoutY="16.0" styleClass="blancoCentradoNegrita" text="00:00:00" />
             <ImageView fitHeight="28.0" fitWidth="22.0" layoutX="1056.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@images/comun/iconoEthernet.png" />
                </image>
             </ImageView>
-            <Pane layoutX="14.0" layoutY="9.0" onMouseClicked="#irALogin" prefHeight="32.0" prefWidth="39.0" style="-fx-background-color: red;">
+            <Pane layoutX="14.0" layoutY="9.0" onMouseClicked="#irALogin" prefHeight="32.0" prefWidth="39.0" styleClass="paneLogOut">
                <children>
                   <ImageView fx:id="imagenLogOut" fitHeight="29.0" fitWidth="33.0" layoutX="3.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -39,18 +39,35 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
             </Pane>
-            <Label fx:id="labelFecha" layoutX="948.0" layoutY="16.0" style="-fx-text-fill: white;" />
+            <Label fx:id="labelFecha" layoutX="963.0" layoutY="16.0" styleClass="blancoCentradoNegrita" text="00/01/0000" />
          </children>
       </Pane>
-      <ImageView fitHeight="196.0" fitWidth="198.0" layoutX="445.0" layoutY="224.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="176.0" fitWidth="171.0" layoutX="454.0" layoutY="236.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@images/login/logoRedondeado.png" />
+            <Image url="@images/comun/logoRedondeado.png" />
          </image>
       </ImageView>
-      <Label fx:id="labelBienvenida" layoutX="274.0" layoutY="80.0" prefHeight="69.0" prefWidth="530.0" style="-fx-text-fill: white;" text="Bienvenido @usuario!">
+      <Label fx:id="labelBienvenida" layoutX="278.0" layoutY="57.0" prefHeight="69.0" prefWidth="530.0" style="-fx-text-fill: white;" text="Bienvenido @usuario!">
          <font>
             <Font name="System Bold" size="48.0" />
          </font>
       </Label>
+      <Pane layoutX="125.0" layoutY="143.0" onMouseClicked="#irAGestionUsuarios" prefHeight="221.0" prefWidth="246.0" styleClass="paneBordesMarronRedondos">
+         <children>
+            <ImageView fx:id="iconoUsuarios" fitHeight="159.0" fitWidth="150.0" layoutX="48.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/pantalla_principal/usuarios.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="labelBienvenida1" layoutX="19.0" layoutY="169.0" prefHeight="32.0" prefWidth="209.0" styleClass="colorTextoBeigeClaro" text="Gestión de Usuarios">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+         </children>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Pane>
    </children>
 </AnchorPane>
