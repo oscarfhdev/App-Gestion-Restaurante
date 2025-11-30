@@ -56,11 +56,11 @@
                   <Image url="@images/comun/logoRedondeado.png" />
                </image>
             </ImageView>
-            <TableView fx:id="tablaGestionDeUsuarios" layoutX="503.0" layoutY="83.0" prefHeight="383.0" prefWidth="352.0" styleClass="tablaMarron">
+            <TableView fx:id="tablaGestionDeUsuarios" layoutX="473.0" layoutY="83.0" prefHeight="383.0" prefWidth="382.0" styleClass="tablaMarron">
               <columns>
-                <TableColumn fx:id="columnaNombre" prefWidth="109.0" text="Nombre" />
-                <TableColumn fx:id="columnaApellido" prefWidth="125.0" text="Apellido" />
-                  <TableColumn fx:id="columnaUsuario" minWidth="0.0" prefWidth="112.0" text="Usuario" />
+                <TableColumn fx:id="columnaNombre" prefWidth="127.0" text="Nombre" />
+                <TableColumn fx:id="columnaApellido" prefWidth="123.0" text="Apellido" />
+                  <TableColumn fx:id="columnaUsuario" minWidth="0.0" prefWidth="126.0" text="Usuario" />
               </columns>
             </TableView>
             <TextField fx:id="textFieldNombre" layoutX="72.0" layoutY="118.0" prefHeight="29.0" prefWidth="201.0" promptText="Nombre" styleClass="inputMarron" />
@@ -81,13 +81,13 @@
                   <String fx:value="blancoCentradoNegrita" />
                </styleClass>
             </Button>
-            <Button fx:id="botonLimpiar1" layoutX="337.0" layoutY="207.0" mnemonicParsing="false" onMouseClicked="#limpiarCampos" prefHeight="37.0" prefWidth="88.0" text="Limpiar">
+            <Button fx:id="botonLimpiar1" layoutX="337.0" layoutY="285.0" mnemonicParsing="false" onMouseClicked="#limpiarCampos" prefHeight="37.0" prefWidth="88.0" text="Limpiar">
                <styleClass>
                   <String fx:value="botonMarron" />
                   <String fx:value="blancoCentradoNegrita" />
                </styleClass>
             </Button>
-            <Button fx:id="botonEliminar" layoutX="337.0" layoutY="285.0" mnemonicParsing="false" onMouseClicked="#eliminarUsuario" prefHeight="37.0" prefWidth="88.0" text="Eliminar">
+            <Button fx:id="botonEliminar" layoutX="337.0" layoutY="207.0" mnemonicParsing="false" onMouseClicked="#eliminarUsuario" prefHeight="37.0" prefWidth="88.0" text="Eliminar">
                <styleClass>
                   <String fx:value="botonMarron" />
                   <String fx:value="blancoCentradoNegrita" />
