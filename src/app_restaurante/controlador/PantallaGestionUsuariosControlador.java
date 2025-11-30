@@ -53,11 +53,6 @@ public class PantallaGestionUsuariosControlador implements Initializable {
     private TableColumn<Usuario, String> columnaApellido;
     @FXML
     private TableColumn<Usuario, String> columnaUsuario;
-    // Opcionales (si las tienes en el fxml)
-    @FXML
-    private TableColumn<Usuario, Boolean> columnaAdmin;
-    @FXML
-    private TableColumn<Usuario, Boolean> columnaHabilitado;
 
     // Campos
     @FXML
@@ -135,9 +130,6 @@ public class PantallaGestionUsuariosControlador implements Initializable {
         columnaNombre.setCellValueFactory(new PropertyValueFactory<>("nombre"));
         columnaApellido.setCellValueFactory(new PropertyValueFactory<>("apellido1"));
         columnaUsuario.setCellValueFactory(new PropertyValueFactory<>("usuario"));
-        
-        if(columnaAdmin != null) columnaAdmin.setCellValueFactory(new PropertyValueFactory<>("administrador"));
-        if(columnaHabilitado != null) columnaHabilitado.setCellValueFactory(new PropertyValueFactory<>("usuarioHabilitado"));
 
         // Listener: Cuando detecta click en la tabla, rellenamos el formulario
         tablaGestionDeUsuarios.getSelectionModel().selectedItemProperty().addListener((obs, oldSelection, newSelection) -> {
@@ -304,10 +296,7 @@ public class PantallaGestionUsuariosControlador implements Initializable {
         configurarBotones(true, false, false, true); // Mostrar solo Guardar y Limpiar
     }
 
-    // -----------------------------------------------------------
-    // 4. UTILIDADES Y VALIDACIONES
-    // -----------------------------------------------------------
-
+    // UTILIDADES Y VALIDACIONES
     private boolean validarCampos() {
         if (textFieldNombre.getText().trim().isEmpty() || 
             textFieldApellido.getText().trim().isEmpty() ||
@@ -370,6 +359,7 @@ public class PantallaGestionUsuariosControlador implements Initializable {
             labelHora.setText(formatoHora.format(dateTimeActual));
             labelFecha.setText(formatoFecha.format(dateTimeActual));
         }));
+        
         reloj.setCycleCount(Timeline.INDEFINITE);
         reloj.play();
     }

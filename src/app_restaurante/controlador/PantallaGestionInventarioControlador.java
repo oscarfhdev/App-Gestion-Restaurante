@@ -23,13 +23,9 @@ public class PantallaGestionInventarioControlador implements Initializable {
     @FXML
     private Label labelFecha;
     @FXML
-    private TableView<?> tablaGestionDeUsuarios;
-    @FXML
     private TableColumn<?, ?> columnaNombre;
     @FXML
     private TextField textFieldNombre;
-    @FXML
-    private TextField textStockActual;
     @FXML
     private TextField textFieldStockMinimo;
     @FXML
@@ -45,8 +41,6 @@ public class PantallaGestionInventarioControlador implements Initializable {
     @FXML
     private ComboBox<?> comboboxCategoria;
     @FXML
-    private TableColumn<?, ?> columnaCategoria;
-    @FXML
     private TableColumn<?, ?> columnaStockActual;
     @FXML
     private TableColumn<?, ?> columnaStockMinimo;
@@ -54,6 +48,12 @@ public class PantallaGestionInventarioControlador implements Initializable {
     private TableColumn<?, ?> columnaUnidad;
     @FXML
     private ComboBox<?> comboboxUnidadMedida;
+    @FXML
+    private TableView<?> tablaGestionDeInventario;
+    @FXML
+    private TableColumn<?, ?> columnaCategoriaInventario;
+    @FXML
+    private TextField textFieldStockActual;
 
 
     @Override

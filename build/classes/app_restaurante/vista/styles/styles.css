@@ -153,23 +153,22 @@
     -fx-alignment: CENTER; 
 }
 
-.paneBordesMarronRedondos{
+.paneBordesMarronRedondosPrincipal{
     -fx-background-color: rgba(245, 245, 220, 0.3);
     -fx-background-radius: 35;
     -fx-border-width: 5;
     -fx-border-color: #775134;
     -fx-border-radius: 30;
-    
 }
 
 /* Se aplica automáticamente cuando ponemos .setDisable(true) en Java */
-.paneBordesMarronRedondos:disabled {
+.paneBordesMarronRedondosPrincipal:disabled {
     -fx-border-color: #A9A9A9; /* Borde Gris Oscuro */
     -fx-opacity: 0.6;           /* Hacemos todo el botón semitransparente */
     -fx-background-color: rgba(200, 200, 200, 0.2); /* Fondo grisáceo */
 }
 
-.paneBordesMarronRedondos:hover{
+.paneBordesMarronRedondosPrincipal:hover{
     -fx-background-color: rgba(245, 245, 220, 0.4);
 
 }
@@ -192,4 +191,36 @@
 
 .botonMarron:hover{
     -fx-background-color: derive(#775134, 20%); 
+}
+
+.paneBisqueBorderMarron{
+    -fx-background-color: #f2eacb;
+    -fx-background-radius: 35;
+    -fx-border-width: 5;
+    -fx-border-color: #775134;
+    -fx-border-radius: 30;
+}
+
+.paneMesaOcupada{
+    -fx-background-color: #d3b444;
+    -fx-background-radius: 20;
+    -fx-border-width: 5;
+    -fx-border-color: #775134;
+    -fx-border-radius: 15;
+}
+
+.paneMesaLibre{
+    -fx-background-color: #7ea13e;
+    -fx-background-radius: 20;
+    -fx-border-width: 5;
+    -fx-border-color: #775134;
+    -fx-border-radius: 15;
+}
+
+.colorTextoVerde{
+    -fx-text-fill: #7ea13e;
+}
+
+.colorTextoAmarillo{
+    -fx-text-fill: #d3b444;
 }

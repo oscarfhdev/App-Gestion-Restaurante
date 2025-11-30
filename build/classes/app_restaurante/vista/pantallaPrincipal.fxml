@@ -19,7 +19,7 @@
             <Image url="@images/pantalla_principal/food.jpg" />
          </image>
       </ImageView>
-      <Pane layoutX="-7.0" layoutY="-6.0" prefHeight="45.0" prefWidth="1092.0" style="-fx-background-color: #775134;">
+      <Pane layoutX="-7.0" layoutY="-6.0" prefHeight="45.0" prefWidth="1092.0" style="-fx-background-color: #775134;" styleClass="paneBordesMarronRedondosPrincipal">
          <children>
             <Label fx:id="labelHora" layoutX="520.0" layoutY="16.0" styleClass="blancoCentradoNegrita" text="00:00:00" />
             <ImageView fitHeight="28.0" fitWidth="22.0" layoutX="1056.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
@@ -52,7 +52,7 @@
             <Font name="System Bold" size="48.0" />
          </font>
       </Label>
-      <Pane layoutX="125.0" layoutY="137.0" onMouseClicked="#irAGestionComandas" prefHeight="221.0" prefWidth="246.0" styleClass="paneBordesMarronRedondos">
+      <Pane layoutX="125.0" layoutY="137.0" onMouseClicked="#irAGestionComandas" prefHeight="221.0" prefWidth="246.0" styleClass="paneBordesMarronRedondosPrincipal">
          <children>
             <ImageView fx:id="iconoBar" fitHeight="159.0" fitWidth="150.0" layoutX="48.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true">
                <image>
@@ -69,7 +69,7 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </Pane>
-      <Pane layoutX="716.0" layoutY="137.0" onMouseClicked="#irACarta" prefHeight="221.0" prefWidth="246.0" styleClass="paneBordesMarronRedondos">
+      <Pane layoutX="716.0" layoutY="137.0" onMouseClicked="#irACarta" prefHeight="221.0" prefWidth="246.0" styleClass="paneBordesMarronRedondosPrincipal">
          <children>
             <ImageView fx:id="iconoCarta" fitHeight="159.0" fitWidth="150.0" layoutX="48.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true">
                <image>
@@ -86,7 +86,7 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </Pane>
-      <Pane fx:id="paneGestionInventario" layoutX="125.0" layoutY="393.0" onMouseClicked="#irAGestionInventario" prefHeight="221.0" prefWidth="246.0" styleClass="paneBordesMarronRedondos">
+      <Pane fx:id="paneGestionInventario" layoutX="125.0" layoutY="393.0" onMouseClicked="#irAGestionInventario" prefHeight="221.0" prefWidth="246.0" styleClass="paneBordesMarronRedondosPrincipal">
          <children>
             <ImageView fx:id="iconoInventario" fitHeight="159.0" fitWidth="150.0" layoutX="48.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true">
                <image>
@@ -103,7 +103,7 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </Pane>
-      <Pane fx:id="paneGestionProductos" layoutX="420.0" layoutY="393.0" onMouseClicked="#irAGestionProductos" prefHeight="221.0" prefWidth="246.0" styleClass="paneBordesMarronRedondos">
+      <Pane fx:id="paneGestionProductos" layoutX="420.0" layoutY="393.0" onMouseClicked="#irAGestionProductos" prefHeight="221.0" prefWidth="246.0" styleClass="paneBordesMarronRedondosPrincipal">
          <children>
             <ImageView fx:id="iconoProductos" fitHeight="159.0" fitWidth="150.0" layoutX="48.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true">
                <image>
@@ -120,7 +120,7 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </Pane>
-      <Pane fx:id="paneGestionUsuarios" layoutX="716.0" layoutY="393.0" onMouseClicked="#irAGestionUsuarios" prefHeight="221.0" prefWidth="246.0" styleClass="paneBordesMarronRedondos">
+      <Pane fx:id="paneGestionUsuarios" layoutX="716.0" layoutY="393.0" onMouseClicked="#irAGestionUsuarios" prefHeight="221.0" prefWidth="246.0" styleClass="paneBordesMarronRedondosPrincipal">
          <children>
             <ImageView fx:id="iconoUsuarios" fitHeight="159.0" fitWidth="150.0" layoutX="48.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true">
                <image>

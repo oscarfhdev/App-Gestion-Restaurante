@@ -23,23 +23,9 @@ public class PantallaGestionProductosControlador implements Initializable {
     @FXML
     private Label labelFecha;
     @FXML
-    private TableView<?> tablaGestionDeUsuarios;
-    @FXML
     private TableColumn<?, ?> columnaNombre;
     @FXML
-    private TableColumn<?, ?> columnaCategoria;
-    @FXML
-    private TableColumn<?, ?> columnaStockActual;
-    @FXML
-    private TableColumn<?, ?> columnaStockMinimo;
-    @FXML
-    private TableColumn<?, ?> columnaUnidad;
-    @FXML
     private TextField textFieldNombre;
-    @FXML
-    private TextField textStockActual;
-    @FXML
-    private TextField textFieldStockMinimo;
     @FXML
     private Button botonGuardar;
     @FXML
@@ -51,9 +37,15 @@ public class PantallaGestionProductosControlador implements Initializable {
     @FXML
     private Label labelError;
     @FXML
-    private ComboBox<?> comboboxCategoria;
+    private TableView<?> tablaGestionDeProductos;
     @FXML
-    private ComboBox<?> comboboxUnidadMedida;
+    private TableColumn<?, ?> columnaPrecio;
+    @FXML
+    private TableColumn<?, ?> columnaCategoriaProducto;
+    @FXML
+    private TextField textFieldPrecio;
+    @FXML
+    private ComboBox<?> comboboxCategoriaProducto;
 
 
     @Override
