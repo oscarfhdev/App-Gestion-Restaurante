@@ -67,9 +67,13 @@
                 <TableColumn fx:id="columnaCategoriaProducto" prefWidth="117.0" text="Categoría" />
               </columns>
             </TableView>
-            <TextField fx:id="textFieldNombre" layoutX="72.0" layoutY="172.0" prefHeight="29.0" prefWidth="201.0" promptText="Nombre" styleClass="inputMarron" />
-            <TextField fx:id="textFieldPrecio" layoutX="72.0" layoutY="234.0" prefHeight="29.0" prefWidth="201.0" promptText="Precio" styleClass="inputMarron" />
-            <Button fx:id="botonGuardar" layoutX="315.0" layoutY="133.0" mnemonicParsing="false" onMouseClicked="#guardarCampos" prefHeight="37.0" prefWidth="88.0" text="Guardar">
+            <TextField fx:id="textFieldNombre" layoutX="69.0" layoutY="177.0" prefHeight="29.0" prefWidth="201.0" promptText="Nombre" styleClass="inputMarron" />
+            <TextField fx:id="textFieldPrecio" layoutX="69.0" layoutY="239.0" prefHeight="29.0" prefWidth="201.0" promptText="Precio" styleClass="inputMarron" />
+            <ComboBox fx:id="comboboxCategoriaProducto" layoutX="69.0" layoutY="300.0" prefHeight="26.0" prefWidth="201.0" promptText="Categoría" styleClass="comboboxBisqueSuave">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></ComboBox>
+            <Button fx:id="botonGuardar" layoutX="311.0" layoutY="160.0" mnemonicParsing="false" onMouseClicked="#guardarCampos" prefHeight="37.0" prefWidth="88.0" text="Guardar">
                <styleClass>
                   <String fx:value="botonMarron" />
                   <String fx:value="blancoCentradoNegrita" />
@@ -78,7 +82,7 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
             </Button>
-            <Button fx:id="botonActualizar" layoutX="315.0" layoutY="133.0" mnemonicParsing="false" onMouseClicked="#actualizarUsuario" prefHeight="37.0" prefWidth="88.0" text="Actualizar">
+            <Button fx:id="botonActualizar" layoutX="311.0" layoutY="160.0" mnemonicParsing="false" onMouseClicked="#actualizarUsuario" prefHeight="37.0" prefWidth="88.0" text="Actualizar">
                <styleClass>
                   <String fx:value="botonMarron" />
                   <String fx:value="blancoCentradoNegrita" />
@@ -87,7 +91,7 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
             </Button>
-            <Button fx:id="botonLimpiar1" layoutX="315.0" layoutY="289.0" mnemonicParsing="false" onMouseClicked="#limpiarCampos" prefHeight="37.0" prefWidth="88.0" text="Limpiar">
+            <Button fx:id="botonLimpiar1" layoutX="311.0" layoutY="316.0" mnemonicParsing="false" onMouseClicked="#limpiarCampos" prefHeight="37.0" prefWidth="88.0" text="Limpiar">
                <styleClass>
                   <String fx:value="botonMarron" />
                   <String fx:value="blancoCentradoNegrita" />
@@ -96,7 +100,7 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
             </Button>
-            <Button fx:id="botonEliminar" layoutX="315.0" layoutY="211.0" mnemonicParsing="false" onMouseClicked="#eliminarUsuario" prefHeight="37.0" prefWidth="88.0" text="Eliminar">
+            <Button fx:id="botonEliminar" layoutX="311.0" layoutY="238.0" mnemonicParsing="false" onMouseClicked="#eliminarUsuario" prefHeight="37.0" prefWidth="88.0" text="Eliminar">
                <styleClass>
                   <String fx:value="botonMarron" />
                   <String fx:value="blancoCentradoNegrita" />
@@ -105,8 +109,7 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
             </Button>
-            <Label fx:id="labelError" layoutX="72.0" layoutY="404.0" prefHeight="30.0" prefWidth="319.0" style="-fx-alignment: center;" textFill="#ff6e6e" />
-            <ComboBox fx:id="comboboxCategoriaProducto" layoutX="72.0" layoutY="295.0" prefHeight="26.0" prefWidth="201.0" promptText="Categoría" />
+            <Label fx:id="labelError" layoutX="69.0" layoutY="378.0" prefHeight="30.0" prefWidth="319.0" styleClass="textoError" />
          </children>
       </Pane>
    </children>

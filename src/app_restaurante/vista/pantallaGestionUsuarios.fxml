@@ -109,7 +109,7 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
             </Button>
-            <Label fx:id="labelError" layoutX="71.0" layoutY="451.0" prefHeight="30.0" prefWidth="319.0" style="-fx-alignment: center;" textFill="#ff6e6e" />
+            <Label fx:id="labelError" layoutX="71.0" layoutY="451.0" prefHeight="30.0" prefWidth="319.0" styleClass="textoError" />
          </children>
       </Pane>
    </children>

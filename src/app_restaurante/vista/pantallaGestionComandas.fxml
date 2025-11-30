@@ -52,12 +52,12 @@
                   <Font name="DejaVu Sans Bold" size="40.0" />
                </font>
             </Label>
-            <ImageView fitHeight="125.0" fitWidth="124.0" layoutX="922.0" layoutY="443.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="119.0" fitWidth="114.0" layoutX="932.0" layoutY="448.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@images/comun/logoRedondeado.png" />
                </image>
             </ImageView>
-            <Pane fx:id="paneContenedorMesas" layoutX="37.0" layoutY="177.0" prefHeight="328.0" prefWidth="610.0" styleClass="paneBisqueBorderMarron">
+            <Pane fx:id="paneContenedorMesas" layoutX="371.0" layoutY="136.0" prefHeight="328.0" prefWidth="540.0" styleClass="paneBisqueBorderMarron">
                <children>
                   <Pane layoutX="38.0" layoutY="30.0" prefHeight="69.0" prefWidth="106.0" styleClass="paneMesaLibre">
                      <children>
@@ -76,7 +76,7 @@
                      </cursor>
                   </Pane>
                </children></Pane>
-            <Button fx:id="botonCobrarComandasIndividuales" layoutX="728.0" layoutY="228.0" mnemonicParsing="false" onMouseClicked="#cobrarComandaIndependiente" prefHeight="37.0" prefWidth="221.0" text="Cobrar Comandas Individuales">
+            <Button fx:id="botonCobrarComandasIndividuales" layoutX="100.0" layoutY="263.0" mnemonicParsing="false" onMouseClicked="#cobrarComandaIndependiente" prefHeight="37.0" prefWidth="221.0" text="Cobrar Comandas Individuales">
                <styleClass>
                   <String fx:value="botonMarron" />
                   <String fx:value="blancoCentradoNegrita" />
@@ -85,13 +85,13 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
             </Button>
-            <Label layoutX="37.0" layoutY="92.0" prefHeight="30.0" prefWidth="150.0" styleClass="colorTextoMarron" text="Total de mesas: ">
+            <Label layoutX="380.0" layoutY="94.0" prefHeight="30.0" prefWidth="150.0" styleClass="colorTextoMarron" text="Total de mesas: ">
                <font>
                   <Font name="DejaVu Sans Bold" size="16.0" />
                </font>
             </Label>
-            <TextField fx:id="textFieldNumeroDeMesas" layoutX="189.0" layoutY="93.0" prefHeight="29.0" prefWidth="201.0" promptText="Número de mesas" styleClass="inputMarron" />
-            <Button fx:id="botonConfigurarMesas" layoutX="403.0" layoutY="89.0" mnemonicParsing="false" onMouseClicked="#configurarMesas" prefHeight="37.0" prefWidth="139.0" text="Configurar Mesas">
+            <TextField fx:id="textFieldNumeroDeMesas" layoutX="532.0" layoutY="95.0" prefHeight="29.0" prefWidth="139.0" promptText="Número de mesas" styleClass="inputMarron" />
+            <Button fx:id="botonConfigurarMesas" layoutX="685.0" layoutY="95.0" mnemonicParsing="false" onMouseClicked="#configurarMesas" prefHeight="30.0" prefWidth="139.0" text="Configurar Mesas">
                <styleClass>
                   <String fx:value="botonMarron" />
                   <String fx:value="blancoCentradoNegrita" />
@@ -100,25 +100,35 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
             </Button>
-            <Button fx:id="botonHistorialCuentasPagadas" layoutX="728.0" layoutY="323.0" mnemonicParsing="false" onMouseClicked="#cobrarComandaIndependiente" prefHeight="37.0" prefWidth="221.0" text="Historial de Cuentas Pagadas">
+            <Button fx:id="botonHistorialCuentasPagadas" layoutX="100.0" layoutY="317.0" mnemonicParsing="false" onMouseClicked="#cobrarComandaIndependiente" prefHeight="37.0" prefWidth="221.0" text="Historial de Cuentas Pagadas">
                <styleClass>
-                  <String fx:value="botonMarron" />
-                  <String fx:value="blancoCentradoNegrita" />
+                  <String fx:value="botonBisque" />
+                  <String fx:value="colorMarronCentradoNegrita" />
                </styleClass>
                <cursor>
                   <Cursor fx:constant="HAND" />
                </cursor>
             </Button>
-            <Label fx:id="labelNumeroMesasLibres" layoutX="37.0" layoutY="141.0" prefHeight="30.0" prefWidth="166.0" styleClass="colorTextoVerde" text="Mesas libres:">
+            <Label fx:id="labelNumeroMesasLibres" layoutX="436.0" layoutY="476.0" prefHeight="30.0" prefWidth="166.0" styleClass="colorTextoVerde" text="Mesas libres:">
                <font>
                   <Font name="DejaVu Sans Bold" size="16.0" />
                </font>
             </Label>
-            <Label fx:id="labelNumeroMesasOcupadas" layoutX="259.0" layoutY="141.0" prefHeight="30.0" prefWidth="189.0" styleClass="colorTextoAmarillo" text="Mesas Ocupadas:" textFill="#d3b444">
+            <Label fx:id="labelNumeroMesasOcupadas" layoutX="660.0" layoutY="476.0" prefHeight="30.0" prefWidth="189.0" styleClass="colorTextoAmarillo" text="Mesas Ocupadas:">
                <font>
                   <Font name="DejaVu Sans Bold" size="16.0" />
                </font>
             </Label>
+            <Label layoutX="95.0" layoutY="177.0" prefHeight="86.0" prefWidth="231.0" styleClass="colorTextoMarronCentrado" text="Pulsa sobre las mesas para ver la información" wrapText="true">
+               <font>
+                  <Font name="DejaVu Sans Bold" size="16.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="37.0" fitWidth="41.0" layoutX="308.0" layoutY="202.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/login/usuario.png" />
+               </image>
+            </ImageView>
          </children>
       </Pane>
    </children>

@@ -70,9 +70,17 @@
               </columns>
             </TableView>
             <TextField fx:id="textFieldNombre" layoutX="72.0" layoutY="118.0" prefHeight="29.0" prefWidth="201.0" promptText="Nombre" styleClass="inputMarron" />
+            <ComboBox fx:id="comboboxCategoria" layoutX="72.0" layoutY="180.0" prefHeight="26.0" prefWidth="201.0" promptText="Categoría" styleClass="comboboxBisqueSuave">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></ComboBox>
             <TextField fx:id="textFieldStockActual" layoutX="72.0" layoutY="242.0" prefHeight="29.0" prefWidth="201.0" promptText="Stock Actual" styleClass="inputMarron" />
             <TextField fx:id="textFieldStockMinimo" layoutX="72.0" layoutY="303.0" prefHeight="29.0" prefWidth="201.0" promptText="Stock Minimo" styleClass="inputMarron" />
-            <Button fx:id="botonGuardar" layoutX="315.0" layoutY="133.0" mnemonicParsing="false" onMouseClicked="#guardarCampos" prefHeight="37.0" prefWidth="88.0" text="Guardar">
+            <ComboBox fx:id="comboboxUnidadMedida" layoutX="72.0" layoutY="363.0" prefHeight="26.0" prefWidth="201.0" promptText="Unidad de Medida" styleClass="comboboxBisqueSuave">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></ComboBox>
+            <Button fx:id="botonGuardar" layoutX="310.0" layoutY="160.0" mnemonicParsing="false" onMouseClicked="#guardarCampos" prefHeight="37.0" prefWidth="88.0" text="Guardar">
                <styleClass>
                   <String fx:value="botonMarron" />
                   <String fx:value="blancoCentradoNegrita" />
@@ -81,7 +89,7 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
             </Button>
-            <Button fx:id="botonActualizar" layoutX="315.0" layoutY="133.0" mnemonicParsing="false" onMouseClicked="#actualizarUsuario" prefHeight="37.0" prefWidth="88.0" text="Actualizar">
+            <Button fx:id="botonActualizar" layoutX="310.0" layoutY="160.0" mnemonicParsing="false" onMouseClicked="#actualizarUsuario" prefHeight="37.0" prefWidth="88.0" text="Actualizar">
                <styleClass>
                   <String fx:value="botonMarron" />
                   <String fx:value="blancoCentradoNegrita" />
@@ -90,7 +98,7 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
             </Button>
-            <Button fx:id="botonLimpiar1" layoutX="315.0" layoutY="289.0" mnemonicParsing="false" onMouseClicked="#limpiarCampos" prefHeight="37.0" prefWidth="88.0" text="Limpiar">
+            <Button fx:id="botonLimpiar1" layoutX="310.0" layoutY="316.0" mnemonicParsing="false" onMouseClicked="#limpiarCampos" prefHeight="37.0" prefWidth="88.0" text="Limpiar">
                <styleClass>
                   <String fx:value="botonMarron" />
                   <String fx:value="blancoCentradoNegrita" />
@@ -99,7 +107,7 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
             </Button>
-            <Button fx:id="botonEliminar" layoutX="315.0" layoutY="211.0" mnemonicParsing="false" onMouseClicked="#eliminarUsuario" prefHeight="37.0" prefWidth="88.0" text="Eliminar">
+            <Button fx:id="botonEliminar" layoutX="310.0" layoutY="238.0" mnemonicParsing="false" onMouseClicked="#eliminarUsuario" prefHeight="37.0" prefWidth="88.0" text="Eliminar">
                <styleClass>
                   <String fx:value="botonMarron" />
                   <String fx:value="blancoCentradoNegrita" />
@@ -108,9 +116,7 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
             </Button>
-            <Label fx:id="labelError" layoutX="72.0" layoutY="404.0" prefHeight="30.0" prefWidth="319.0" style="-fx-alignment: center;" textFill="#ff6e6e" />
-            <ComboBox fx:id="comboboxCategoria" layoutX="72.0" layoutY="180.0" prefHeight="26.0" prefWidth="201.0" promptText="Categoría" />
-            <ComboBox fx:id="comboboxUnidadMedida" layoutX="72.0" layoutY="363.0" prefHeight="26.0" prefWidth="201.0" promptText="Unidad de Medida" />
+            <Label fx:id="labelError" layoutX="72.0" layoutY="404.0" prefHeight="30.0" prefWidth="319.0" styleClass="textoError" />
          </children>
       </Pane>
    </children>

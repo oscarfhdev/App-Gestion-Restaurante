@@ -153,6 +153,12 @@
     -fx-alignment: CENTER; 
 }
 
+.colorMarronCentradoNegrita{
+    -fx-text-fill: #775134;
+    -fx-font-weight: bold;
+    -fx-alignment: CENTER; 
+}
+
 .paneBordesMarronRedondosPrincipal{
     -fx-background-color: rgba(245, 245, 220, 0.3);
     -fx-background-radius: 35;
@@ -181,7 +187,6 @@
 #panelIrAHome:hover{
     -fx-background-color: #8a6245; /* Beige */
     -fx-background-radius: 10;
-
 }
 
 .botonMarron{
@@ -191,6 +196,14 @@
 
 .botonMarron:hover{
     -fx-background-color: derive(#775134, 20%); 
+}
+
+.botonBisque{
+    -fx-background-color: bisque;
+    -fx-background-radius: 20px;
+}
+.botonBisque:hover{
+    -fx-background-color: derive(bisque, -20%); 
 }
 
 .paneBisqueBorderMarron{
@@ -209,6 +222,10 @@
     -fx-border-radius: 15;
 }
 
+.paneMesaOcupada:hover{
+    -fx-background-color: #ddc77e;
+}
+
 .paneMesaLibre{
     -fx-background-color: #7ea13e;
     -fx-background-radius: 20;
@@ -217,10 +234,51 @@
     -fx-border-radius: 15;
 }
 
+.paneMesaLibre:hover{
+    -fx-background-color: #86ba82;
+}
+
+
 .colorTextoVerde{
     -fx-text-fill: #7ea13e;
 }
 
 .colorTextoAmarillo{
     -fx-text-fill: #d3b444;
+}
+
+
+.comboboxBisqueSuave{
+    -fx-background-color: #f2eacb;
+    -fx-border-width: 2;
+    -fx-border-color: #775134;
+    -fx-background-radius: 5;
+    -fx-border-radius: 3;
+}
+
+.comboboxBisqueSuave:hover{
+    -fx-background-color: derive(#f2eacb, -5%); 
+}
+
+.panelIrAtras{
+    -fx-background-color: #775134; 
+    -fx-background-radius: 10;
+}
+
+.panelIrAtras:hover{
+    -fx-background-color: derive(#775134, 40%); 
+}
+
+.botonGuardar{
+    -fx-background-color: #468241;
+    -fx-background-radius: 20px;
+}
+
+.botonGuardar:hover{
+    -fx-background-color: derive(#468241, 20%); 
+}
+
+
+.textoError{
+    -fx-text-fill: #ff6e6e;
 }
