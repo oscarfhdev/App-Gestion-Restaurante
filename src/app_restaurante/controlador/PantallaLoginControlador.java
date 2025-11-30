@@ -99,8 +99,8 @@ public class PantallaLoginControlador implements Initializable {
         Parent root = loader.load();
         
         // Pasamos los datos al siguiente controlador
-        // PantallaPrincipalControlador controlador = loader.getController();
-        // controlador.setUsuarioActual(usuario); 
+        PantallaPrincipalControlador controlador = loader.getController();
+        controlador.setUsuarioActual(usuario); 
 
         Scene escena = new Scene(root);
         

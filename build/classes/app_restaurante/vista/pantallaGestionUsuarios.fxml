@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import java.lang.String?>
 <?import java.net.URL?>
+<?import javafx.scene.control.Button?>
 <?import javafx.scene.control.CheckBox?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TableColumn?>
@@ -54,19 +56,44 @@
                   <Image url="@images/comun/logoRedondeado.png" />
                </image>
             </ImageView>
-            <TableView layoutX="423.0" layoutY="83.0" prefHeight="383.0" prefWidth="347.0" styleClass="tablaMarron">
+            <TableView fx:id="tablaGestionDeUsuarios" layoutX="503.0" layoutY="83.0" prefHeight="383.0" prefWidth="352.0" styleClass="tablaMarron">
               <columns>
-                <TableColumn prefWidth="109.0" text="Nombre" />
-                <TableColumn prefWidth="125.0" text="Apellido" />
-                  <TableColumn minWidth="0.0" prefWidth="112.0" text="Usuario" />
+                <TableColumn fx:id="columnaNombre" prefWidth="109.0" text="Nombre" />
+                <TableColumn fx:id="columnaApellido" prefWidth="125.0" text="Apellido" />
+                  <TableColumn fx:id="columnaUsuario" minWidth="0.0" prefWidth="112.0" text="Usuario" />
               </columns>
             </TableView>
-            <TextField layoutX="138.0" layoutY="121.0" prefHeight="29.0" prefWidth="201.0" promptText="Nombre" styleClass="inputMarron" />
-            <TextField layoutX="138.0" layoutY="245.0" prefHeight="29.0" prefWidth="201.0" promptText="Usuario" styleClass="inputMarron" />
-            <TextField layoutX="138.0" layoutY="306.0" prefHeight="29.0" prefWidth="201.0" promptText="Contraseña" styleClass="inputMarron" />
-            <TextField layoutX="138.0" layoutY="181.0" prefHeight="29.0" prefWidth="201.0" promptText="Apellido" styleClass="inputMarron" />
-            <CheckBox layoutX="137.0" layoutY="413.0" mnemonicParsing="false" styleClass="checkboxMarron" text="Usuario habilidato" />
-            <CheckBox layoutX="137.0" layoutY="374.0" mnemonicParsing="false" styleClass="checkboxMarron" text="Usuario administrador" />
+            <TextField fx:id="textFieldNombre" layoutX="72.0" layoutY="118.0" prefHeight="29.0" prefWidth="201.0" promptText="Nombre" styleClass="inputMarron" />
+            <TextField fx:id="textFieldApellido" layoutX="72.0" layoutY="178.0" prefHeight="29.0" prefWidth="201.0" promptText="Apellido" styleClass="inputMarron" />
+            <TextField fx:id="textFieldUsuario" layoutX="72.0" layoutY="242.0" prefHeight="29.0" prefWidth="201.0" promptText="Usuario" styleClass="inputMarron" />
+            <TextField fx:id="textFieldPassword" layoutX="72.0" layoutY="303.0" prefHeight="29.0" prefWidth="201.0" promptText="Contraseña" styleClass="inputMarron" />
+            <CheckBox fx:id="checkBoxHabilitado" layoutX="71.0" layoutY="410.0" mnemonicParsing="false" styleClass="checkboxMarron" text="Usuario habilidato" />
+            <CheckBox fx:id="checkBoxAdministrador" layoutX="71.0" layoutY="371.0" mnemonicParsing="false" styleClass="checkboxMarron" text="Usuario administrador" />
+            <Button fx:id="botonGuardar" layoutX="337.0" layoutY="129.0" mnemonicParsing="false" onMouseClicked="#guardarCampos" prefHeight="37.0" prefWidth="88.0" text="Guardar">
+               <styleClass>
+                  <String fx:value="botonMarron" />
+                  <String fx:value="blancoCentradoNegrita" />
+               </styleClass>
+            </Button>
+            <Button fx:id="botonActualizar" layoutX="337.0" layoutY="129.0" mnemonicParsing="false" onMouseClicked="#actualizarUsuario" prefHeight="37.0" prefWidth="88.0" text="Actualizar">
+               <styleClass>
+                  <String fx:value="botonMarron" />
+                  <String fx:value="blancoCentradoNegrita" />
+               </styleClass>
+            </Button>
+            <Button fx:id="botonLimpiar1" layoutX="337.0" layoutY="207.0" mnemonicParsing="false" onMouseClicked="#limpiarCampos" prefHeight="37.0" prefWidth="88.0" text="Limpiar">
+               <styleClass>
+                  <String fx:value="botonMarron" />
+                  <String fx:value="blancoCentradoNegrita" />
+               </styleClass>
+            </Button>
+            <Button fx:id="botonEliminar" layoutX="337.0" layoutY="285.0" mnemonicParsing="false" onMouseClicked="#eliminarUsuario" prefHeight="37.0" prefWidth="88.0" text="Eliminar">
+               <styleClass>
+                  <String fx:value="botonMarron" />
+                  <String fx:value="blancoCentradoNegrita" />
+               </styleClass>
+            </Button>
+            <Label fx:id="labelError" layoutX="71.0" layoutY="451.0" prefHeight="30.0" prefWidth="319.0" style="-fx-alignment: center;" textFill="#ff6e6e" />
          </children>
       </Pane>
    </children>

@@ -42,24 +42,92 @@
             <Label fx:id="labelFecha" layoutX="963.0" layoutY="16.0" styleClass="blancoCentradoNegrita" text="00/01/0000" />
          </children>
       </Pane>
-      <ImageView fitHeight="176.0" fitWidth="171.0" layoutX="454.0" layoutY="236.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="176.0" fitWidth="171.0" layoutX="457.0" layoutY="162.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@images/comun/logoRedondeado.png" />
          </image>
       </ImageView>
-      <Label fx:id="labelBienvenida" layoutX="278.0" layoutY="57.0" prefHeight="69.0" prefWidth="530.0" style="-fx-text-fill: white;" text="Bienvenido @usuario!">
+      <Label fx:id="labelBienvenida" layoutX="85.0" layoutY="56.0" prefHeight="69.0" prefWidth="908.0" styleClass="blancoCentradoNegrita">
          <font>
             <Font name="System Bold" size="48.0" />
          </font>
       </Label>
-      <Pane layoutX="125.0" layoutY="143.0" onMouseClicked="#irAGestionUsuarios" prefHeight="221.0" prefWidth="246.0" styleClass="paneBordesMarronRedondos">
+      <Pane layoutX="125.0" layoutY="137.0" onMouseClicked="#irAGestionComandas" prefHeight="221.0" prefWidth="246.0" styleClass="paneBordesMarronRedondos">
+         <children>
+            <ImageView fx:id="iconoBar" fitHeight="159.0" fitWidth="150.0" layoutX="48.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/pantalla_principal/iconoBar.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="10.0" layoutY="169.0" prefHeight="32.0" prefWidth="226.0" styleClass="colorTextoBeigeClaro" text="Gestión de Comandas">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+         </children>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Pane>
+      <Pane layoutX="716.0" layoutY="137.0" onMouseClicked="#irACarta" prefHeight="221.0" prefWidth="246.0" styleClass="paneBordesMarronRedondos">
+         <children>
+            <ImageView fx:id="iconoCarta" fitHeight="159.0" fitWidth="150.0" layoutX="48.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/pantalla_principal/iconoCarta.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="10.0" layoutY="169.0" prefHeight="32.0" prefWidth="226.0" styleClass="colorTextoBeigeClaro" text="Ver Carta">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+         </children>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Pane>
+      <Pane fx:id="paneGestionInventario" layoutX="125.0" layoutY="393.0" onMouseClicked="#irAGestionInventario" prefHeight="221.0" prefWidth="246.0" styleClass="paneBordesMarronRedondos">
+         <children>
+            <ImageView fx:id="iconoInventario" fitHeight="159.0" fitWidth="150.0" layoutX="48.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/pantalla_principal/iconoInventario.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="10.0" layoutY="169.0" prefHeight="32.0" prefWidth="226.0" styleClass="colorTextoBeigeClaro" text="Gestión de Inventario">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+         </children>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Pane>
+      <Pane fx:id="paneGestionProductos" layoutX="420.0" layoutY="393.0" onMouseClicked="#irAGestionProductos" prefHeight="221.0" prefWidth="246.0" styleClass="paneBordesMarronRedondos">
+         <children>
+            <ImageView fx:id="iconoProductos" fitHeight="159.0" fitWidth="150.0" layoutX="48.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/pantalla_principal/iconoProductos.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="10.0" layoutY="169.0" prefHeight="32.0" prefWidth="226.0" styleClass="colorTextoBeigeClaro" text="Gestión de Productos">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+         </children>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Pane>
+      <Pane fx:id="paneGestionUsuarios" layoutX="716.0" layoutY="393.0" onMouseClicked="#irAGestionUsuarios" prefHeight="221.0" prefWidth="246.0" styleClass="paneBordesMarronRedondos">
          <children>
             <ImageView fx:id="iconoUsuarios" fitHeight="159.0" fitWidth="150.0" layoutX="48.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@images/pantalla_principal/usuarios.png" />
                </image>
             </ImageView>
-            <Label fx:id="labelBienvenida1" layoutX="19.0" layoutY="169.0" prefHeight="32.0" prefWidth="209.0" styleClass="colorTextoBeigeClaro" text="Gestión de Usuarios">
+            <Label layoutX="19.0" layoutY="169.0" prefHeight="32.0" prefWidth="209.0" styleClass="colorTextoBeigeClaro" text="Gestión de Usuarios">
                <font>
                   <Font name="System Bold" size="20.0" />
                </font>

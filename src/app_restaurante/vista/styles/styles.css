@@ -128,6 +128,13 @@
     
 }
 
+/* Se aplica automáticamente cuando ponemos .setDisable(true) en Java */
+.paneBordesMarronRedondos:disabled {
+    -fx-border-color: #A9A9A9; /* Borde Gris Oscuro */
+    -fx-opacity: 0.6;           /* Hacemos todo el botón semitransparente */
+    -fx-background-color: rgba(200, 200, 200, 0.2); /* Fondo grisáceo */
+}
+
 .paneBordesMarronRedondos:hover{
     -fx-background-color: rgba(245, 245, 220, 0.4);
 
@@ -142,4 +149,13 @@
     -fx-background-color: #8a6245; /* Beige */
     -fx-background-radius: 10;
 
+}
+
+.botonMarron{
+    -fx-background-color: #775134;
+    -fx-background-radius: 20px;
+}
+
+.botonMarron:hover{
+    -fx-background-color: derive(#775134, 20%); 
 }
