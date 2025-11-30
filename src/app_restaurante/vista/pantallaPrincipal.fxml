@@ -59,7 +59,7 @@
                   <Image url="@images/pantalla_principal/iconoBar.png" />
                </image>
             </ImageView>
-            <Label layoutX="10.0" layoutY="169.0" prefHeight="32.0" prefWidth="226.0" styleClass="colorTextoBeigeClaro" text="Gestión de Comandas">
+            <Label layoutX="10.0" layoutY="169.0" prefHeight="32.0" prefWidth="226.0" styleClass="colorTextoBeigeClaroCentrado" text="Gestión de Comandas">
                <font>
                   <Font name="System Bold" size="20.0" />
                </font>
@@ -76,7 +76,7 @@
                   <Image url="@images/pantalla_principal/iconoCarta.png" />
                </image>
             </ImageView>
-            <Label layoutX="10.0" layoutY="169.0" prefHeight="32.0" prefWidth="226.0" styleClass="colorTextoBeigeClaro" text="Ver Carta">
+            <Label layoutX="10.0" layoutY="169.0" prefHeight="32.0" prefWidth="226.0" styleClass="colorTextoBeigeClaroCentrado" text="Ver Carta">
                <font>
                   <Font name="System Bold" size="20.0" />
                </font>
@@ -93,7 +93,7 @@
                   <Image url="@images/pantalla_principal/iconoInventario.png" />
                </image>
             </ImageView>
-            <Label layoutX="10.0" layoutY="169.0" prefHeight="32.0" prefWidth="226.0" styleClass="colorTextoBeigeClaro" text="Gestión de Inventario">
+            <Label layoutX="10.0" layoutY="169.0" prefHeight="32.0" prefWidth="226.0" styleClass="colorTextoBeigeClaroCentrado" text="Gestión de Inventario">
                <font>
                   <Font name="System Bold" size="20.0" />
                </font>
@@ -110,7 +110,7 @@
                   <Image url="@images/pantalla_principal/iconoProductos.png" />
                </image>
             </ImageView>
-            <Label layoutX="10.0" layoutY="169.0" prefHeight="32.0" prefWidth="226.0" styleClass="colorTextoBeigeClaro" text="Gestión de Productos">
+            <Label layoutX="10.0" layoutY="169.0" prefHeight="32.0" prefWidth="226.0" styleClass="colorTextoBeigeClaroCentrado" text="Gestión de Productos">
                <font>
                   <Font name="System Bold" size="20.0" />
                </font>
@@ -127,7 +127,7 @@
                   <Image url="@images/pantalla_principal/usuarios.png" />
                </image>
             </ImageView>
-            <Label layoutX="19.0" layoutY="169.0" prefHeight="32.0" prefWidth="209.0" styleClass="colorTextoBeigeClaro" text="Gestión de Usuarios">
+            <Label layoutX="19.0" layoutY="169.0" prefHeight="32.0" prefWidth="209.0" styleClass="colorTextoBeigeClaroCentrado" text="Gestión de Usuarios">
                <font>
                   <Font name="System Bold" size="20.0" />
                </font>

@@ -2,14 +2,21 @@
 
 .colorTextoMarron{
     -fx-text-fill: #775134;
-    -fx-alignment: CENTER; 
-
 }
+
+.colorTextoMarronCentrado{
+    -fx-text-fill: #775134;
+    -fx-alignment: CENTER; 
+}
+
 
 .colorTextoBeigeClaro{
     -fx-text-fill: #f2eacb;
-    -fx-alignment: CENTER; 
+}
 
+.colorTextoBeigeClaroCentrado{
+    -fx-text-fill: #f2eacb;
+    -fx-alignment: CENTER; 
 }
 
 
