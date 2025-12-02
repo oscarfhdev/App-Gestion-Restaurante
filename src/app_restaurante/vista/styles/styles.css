@@ -282,3 +282,27 @@
 .textoError{
     -fx-text-fill: #ff6e6e;
 }
+
+/* Ponemos ".tablaMarron .table-row-cell.filaAlertaStock"
+   Esto significa: "Una fila, que está dentro de la tabla marrón, Y tiene la clase de alerta".
+   Al sumar clases, ganamos prioridad sobre el beige normal.
+*/
+.tablaMarron .table-row-cell.filaAlertaStock {
+    -fx-background-color: #ffcccc; /* Rojo pastel */
+    -fx-background-insets: 0;
+}
+
+/* Hover sobre la alerta */
+.tablaMarron .table-row-cell.filaAlertaStock:hover {
+    -fx-background-color: #ffb3b3; /* Rojo un poco más oscuro al pasar mouse */
+}
+
+/* IMPORTANTE: La selección debe ganar siempre */
+.tablaMarron .table-row-cell:selected.filaAlertaStock {
+    -fx-background-color: #775134; /* Se mantiene marrón al seleccionar */
+    -fx-text-fill: white;
+}
+
+.colorRojoPastel{
+    -fx-text-fill: #de595d;
+}

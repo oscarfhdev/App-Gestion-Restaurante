@@ -4,7 +4,12 @@
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
             <file>file:/home/oscarfh06/Documentos/OSCAR/2DAM/DESARROLLO%20DE%20INTERFACES/TEMA%202/JAVAFX/AppRestaurante/src/app_restaurante/vista/styles/styles.css</file>
-            <file>file:/home/oscarfh06/Documentos/OSCAR/2DAM/DESARROLLO%20DE%20INTERFACES/TEMA%202/JAVAFX/AppRestaurante/src/app_restaurante/controlador/PantallaGestionMesaControlador.java</file>
+            <file>file:/home/oscarfh06/Documentos/OSCAR/2DAM/DESARROLLO%20DE%20INTERFACES/TEMA%202/JAVAFX/AppRestaurante/src/app_restaurante/modelo/ProductoInventario.java</file>
+            <file>file:/home/oscarfh06/Documentos/OSCAR/2DAM/DESARROLLO%20DE%20INTERFACES/TEMA%202/JAVAFX/AppRestaurante/src/app_restaurante/controlador/PantallaGestionInventarioControlador.java</file>
+            <file>file:/home/oscarfh06/Documentos/OSCAR/2DAM/DESARROLLO%20DE%20INTERFACES/TEMA%202/JAVAFX/AppRestaurante/src/app_restaurante/modelo/CategoriaInventario.java</file>
+            <file>file:/home/oscarfh06/Documentos/OSCAR/2DAM/DESARROLLO%20DE%20INTERFACES/TEMA%202/JAVAFX/AppRestaurante/src/app_restaurante/dao/UsuarioDAO.java</file>
+            <file>file:/home/oscarfh06/Documentos/OSCAR/2DAM/DESARROLLO%20DE%20INTERFACES/TEMA%202/JAVAFX/AppRestaurante/src/app_restaurante/dao/InventarioDAO.java</file>
+            <file>file:/home/oscarfh06/Documentos/OSCAR/2DAM/DESARROLLO%20DE%20INTERFACES/TEMA%202/JAVAFX/AppRestaurante/src/app_restaurante/vista/pantallaGestionInventario.fxml</file>
         </group>
     </open-files>
 </project-private>

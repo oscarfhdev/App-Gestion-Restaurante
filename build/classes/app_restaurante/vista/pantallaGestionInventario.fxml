@@ -60,13 +60,13 @@
                   <Image url="@images/comun/logoRedondeado.png" />
                </image>
             </ImageView>
-            <TableView fx:id="tablaGestionDeInventario" layoutX="439.0" layoutY="80.0" prefHeight="383.0" prefWidth="502.0" styleClass="tablaMarron">
+            <TableView fx:id="tablaGestionDeInventario" layoutX="409.0" layoutY="80.0" prefHeight="383.0" prefWidth="532.0" styleClass="tablaMarron">
               <columns>
-                <TableColumn fx:id="columnaNombre" prefWidth="130.0" text="Nombre" />
-                <TableColumn fx:id="columnaCategoriaInventario" prefWidth="107.0" text="Categoría" />
-                  <TableColumn fx:id="columnaStockActual" minWidth="0.0" prefWidth="93.0" text="Stock Actual" />
-                  <TableColumn fx:id="columnaStockMinimo" minWidth="0.0" prefWidth="100.0" text="Stock Mínimo" />
-                  <TableColumn fx:id="columnaUnidad" minWidth="0.0" prefWidth="65.0" text="Unidad" />
+                <TableColumn fx:id="columnaNombre" prefWidth="141.0" text="Nombre" />
+                <TableColumn fx:id="columnaCategoriaInventario" prefWidth="127.0" text="Categoría" />
+                  <TableColumn fx:id="columnaStockActual" minWidth="0.0" prefWidth="88.0" text="Stock Actual" />
+                  <TableColumn fx:id="columnaStockMinimo" minWidth="0.0" prefWidth="94.0" text="Stock Mínimo" />
+                  <TableColumn fx:id="columnaUnidad" minWidth="0.0" prefWidth="76.0" text="Unidad" />
               </columns>
             </TableView>
             <TextField fx:id="textFieldNombre" layoutX="72.0" layoutY="118.0" prefHeight="29.0" prefWidth="201.0" promptText="Nombre" styleClass="inputMarron" />
@@ -80,7 +80,7 @@
                <cursor>
                   <Cursor fx:constant="HAND" />
                </cursor></ComboBox>
-            <Button fx:id="botonGuardar" layoutX="310.0" layoutY="160.0" mnemonicParsing="false" onMouseClicked="#guardarCampos" prefHeight="37.0" prefWidth="88.0" text="Guardar">
+            <Button fx:id="botonGuardar" layoutX="297.0" layoutY="160.0" mnemonicParsing="false" onMouseClicked="#guardarProductoInventario" prefHeight="37.0" prefWidth="88.0" text="Guardar">
                <styleClass>
                   <String fx:value="botonMarron" />
                   <String fx:value="blancoCentradoNegrita" />
@@ -89,7 +89,7 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
             </Button>
-            <Button fx:id="botonActualizar" layoutX="310.0" layoutY="160.0" mnemonicParsing="false" onMouseClicked="#actualizarUsuario" prefHeight="37.0" prefWidth="88.0" text="Actualizar">
+            <Button fx:id="botonActualizar" layoutX="297.0" layoutY="160.0" mnemonicParsing="false" onMouseClicked="#actualizarProductoInventario" prefHeight="37.0" prefWidth="88.0" text="Actualizar">
                <styleClass>
                   <String fx:value="botonMarron" />
                   <String fx:value="blancoCentradoNegrita" />
@@ -98,7 +98,7 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
             </Button>
-            <Button fx:id="botonLimpiar1" layoutX="310.0" layoutY="316.0" mnemonicParsing="false" onMouseClicked="#limpiarCampos" prefHeight="37.0" prefWidth="88.0" text="Limpiar">
+            <Button fx:id="botonLimpiar1" layoutX="297.0" layoutY="316.0" mnemonicParsing="false" onMouseClicked="#limpiarCampos" prefHeight="37.0" prefWidth="88.0" text="Limpiar">
                <styleClass>
                   <String fx:value="botonMarron" />
                   <String fx:value="blancoCentradoNegrita" />
@@ -107,7 +107,7 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
             </Button>
-            <Button fx:id="botonEliminar" layoutX="310.0" layoutY="238.0" mnemonicParsing="false" onMouseClicked="#eliminarUsuario" prefHeight="37.0" prefWidth="88.0" text="Eliminar">
+            <Button fx:id="botonEliminar" layoutX="297.0" layoutY="238.0" mnemonicParsing="false" onMouseClicked="#eliminarProductoInventario" prefHeight="37.0" prefWidth="88.0" text="Eliminar">
                <styleClass>
                   <String fx:value="botonMarron" />
                   <String fx:value="blancoCentradoNegrita" />
@@ -117,6 +117,7 @@
                </cursor>
             </Button>
             <Label fx:id="labelError" layoutX="72.0" layoutY="404.0" prefHeight="30.0" prefWidth="319.0" styleClass="textoError" />
+            <Label layoutX="409.0" layoutY="475.0" prefHeight="30.0" prefWidth="390.0" styleClass="colorRojoPastel" text="Las filas de color rojo están por debajo del stock mínimo!" />
          </children>
       </Pane>
    </children>

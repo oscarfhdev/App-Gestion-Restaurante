@@ -127,18 +127,65 @@ public class PantallaPrincipalControlador implements Initializable {
     }
 
     @FXML
-    private void irAGestionInventario(MouseEvent event) {
+    private void irAGestionInventario(MouseEvent event) throws IOException {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/app_restaurante/vista/pantallaGestionInventario.fxml"));
+        Parent root = loader.load();
+        
+        // OBTENER CONTROLADOR Y PASAR USUARIO
+        PantallaGestionInventarioControlador controlador = loader.getController();
+        controlador.setUsuarioLogueado(this.usuarioActual); 
+        
+        Scene escena = new Scene(root);
+        
+
+        Stage stage = (Stage) iconoInventario.getScene().getWindow();
+
+        stage.setScene(escena);
+        stage.setTitle("Mesón Fernández - Gestión de Inventario");  
+    }
+    
+    @FXML
+    private void irACarta(MouseEvent event) throws IOException {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/app_restaurante/vista/pantallaCarta.fxml"));
+        Parent root = loader.load();
+        
+        // PantallaCartaControlador controlador = loader.getController();
+        // controlador.setUsuarioLogueado(this.usuarioActual);
+        
+        Scene escena = new Scene(root);
+        Stage stage = (Stage) iconoCarta.getScene().getWindow();
+        
+        stage.setScene(escena);
+        stage.setTitle("Mesón Fernández - Carta");
     }
 
     @FXML
-    private void irACarta(MouseEvent event) {
+    private void irAGestionComandas(MouseEvent event) throws IOException {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/app_restaurante/vista/pantallaGestionComandas.fxml"));
+        Parent root = loader.load();
+        
+        // PantallaComandasControlador controlador = loader.getController();
+        // controlador.setUsuarioLogueado(this.usuarioActual);
+        
+        Scene escena = new Scene(root);
+        Stage stage = (Stage) iconoBar.getScene().getWindow();
+        
+        stage.setScene(escena);
+        stage.setTitle("Mesón Fernández - Gestión de Comandas");
     }
 
     @FXML
-    private void irAGestionComandas(MouseEvent event) {
-    }
-
-    @FXML
-    private void irAGestionProductos(MouseEvent event) {
+    private void irAGestionProductos(MouseEvent event) throws IOException {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/app_restaurante/vista/pantallaGestionProductos.fxml"));
+        Parent root = loader.load();
+        
+        // PantallaGestionProductosControlador controlador = loader.getController();
+        // controlador.setUsuarioLogueado(this.usuarioActual);
+        
+        Scene escena = new Scene(root);
+        Stage stage = (Stage) iconoProductos.getScene().getWindow();
+        
+        stage.setScene(escena);
+        stage.setTitle("Mesón Fernández - Gestión de Productos");
     }
 }
