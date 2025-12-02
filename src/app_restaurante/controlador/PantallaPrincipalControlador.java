@@ -149,8 +149,8 @@ public class PantallaPrincipalControlador implements Initializable {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("/app_restaurante/vista/pantallaCarta.fxml"));
         Parent root = loader.load();
         
-        // PantallaCartaControlador controlador = loader.getController();
-        // controlador.setUsuarioLogueado(this.usuarioActual);
+        PantallaCartaControlador controlador = loader.getController();
+        controlador.setUsuarioLogueado(this.usuarioActual);
         
         Scene escena = new Scene(root);
         Stage stage = (Stage) iconoCarta.getScene().getWindow();

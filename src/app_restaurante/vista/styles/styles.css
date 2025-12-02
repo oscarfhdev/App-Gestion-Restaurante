@@ -306,3 +306,51 @@
 .colorRojoPastel{
     -fx-text-fill: #de595d;
 }
+
+
+/* --- ESTILOS DE LA CARTA DINÁMICA --- */
+
+/* Título de la Categoría */
+.carta-titulo-categoria {
+    -fx-font-size: 26px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #775134;
+    -fx-padding: 20 0 10 0;
+    -fx-alignment: CENTER;
+    /* Línea decorativa debajo del título */
+    -fx-border-color: transparent transparent #775134 transparent;
+    -fx-border-width: 0 0 2 0;
+}
+
+/* Contenedor de los platos de una categoría */
+.carta-caja-categoria {
+    -fx-padding: 10 40 30 40; /* Márgenes laterales grandes*/
+}
+
+/* Fila individual de cada plato (HBox) */
+.carta-fila-plato {
+    -fx-alignment: CENTER_LEFT;
+    -fx-padding: 5;
+}
+
+/* Nombre del plato */
+.carta-nombre-plato {
+    -fx-font-weight: bold;
+    -fx-font-size: 16px;
+    -fx-text-fill: #5a3e2b; /* Marrón oscuro */
+}
+
+/* Línea de puntos separadora (................) */
+.carta-separador-puntos {
+    -fx-border-style: dotted;
+    -fx-border-color: transparent transparent #a68b75 transparent; /* Marrón clarito */
+    -fx-border-width: 0 0 2 0;
+    -fx-margin: 0 10 5 10; /* Margen para alinear con el texto */
+}
+
+/* Precio del plato */
+.carta-precio-plato {
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #775134; /* Marrón estándar */
+}
