@@ -1,7 +1,4 @@
-MESA 1 | 2025-12-02 21:40:35 | Ensalada César(5) Carrillada Ibérica(2)  | PAGO: TARJETA | TOTAL: 74,00€
-TICKET PARCIAL MESA 1 | 2025-12-02 22:06:54 | PAGO: Tarjeta | TOTAL: 22,00€
-TICKET PARCIAL MESA 1 | 2025-12-02 22:07:18 | PAGO: Efectivo | TOTAL: 11,00€
-TICKET PARCIAL MESA 1 | 2025-12-02 22:10:15 | Merluza a la Vasca(3) | PAGO: EFECTIVO (Entregado: 50,00€ - Cambio: 2,00€) | TOTAL: 48,00€
-TICKET PARCIAL MESA 1 | 2025-12-02 22:10:30 | Tabla de Quesos(2) | PAGO: TARJETA | TOTAL: 25,00€
-MESA 1 | 2025-12-02 22:10:38 | Tabla de Quesos(2)  | PAGO: TARJETA | TOTAL: 25,00€
-MESA 1 | 2025-12-02 22:13:41 | Ensalada César(4)  | PAGO: TARJETA | TOTAL: 36,00€
+MESA 1 | 2025-12-02 22:21:47 | Carrillada Ibérica(3) Cerveza Mahou(2)  | PAGO: TARJETA | TOTAL: 48,50€
+TICKET PARCIAL MESA 3 | 2025-11-02 20:22:15 | Vino Rioja (Copa)(4) Ensalada César(2) | PAGO: EFECTIVO (Entregado: 30,00€ - Cambio: 0,00€) | TOTAL: 30,00€
+TICKET PARCIAL MESA 3 | 2025-11-02 20:22:35 | Vino Rioja (Copa)(4) Ensalada César(3) | PAGO: EFECTIVO (Entregado: 50,00€ - Cambio: 11,00€) | TOTAL: 39,00€
+MESA 7 | 2025-11-02 20:22:58 | Flan Casero(8)  | PAGO: TARJETA | TOTAL: 36,00€

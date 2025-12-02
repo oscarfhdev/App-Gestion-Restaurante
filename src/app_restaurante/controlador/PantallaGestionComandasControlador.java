@@ -185,8 +185,8 @@ public class PantallaGestionComandasControlador implements Initializable {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("/app_restaurante/vista/pantallaHistorialPagos.fxml"));
         Parent root = loader.load();
         
-        //PantallaHistorialControlador controlador = loader.getController();
-        // controlador.setUsuarioLogueado(usuarioLogueado);
+        PantallaHistorialPagosControlador controlador = loader.getController();
+        controlador.setUsuarioLogueado(usuarioLogueado);
         
         Scene escena = new Scene(root);
         // Usamos el botón que pulsaste para obtener la ventana
