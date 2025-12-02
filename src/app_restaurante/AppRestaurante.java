@@ -2,6 +2,7 @@
 package app_restaurante;
 
 import app_restaurante.dao.InventarioDAO;
+import app_restaurante.dao.ProductoCartaDAO;
 import app_restaurante.dao.UsuarioDAO;
 import java.io.IOException;
 import javafx.application.Application;
@@ -18,9 +19,10 @@ public class AppRestaurante extends Application {
             // Inicializamos la capa de datos
             UsuarioDAO usuarioDAO = new UsuarioDAO();
             InventarioDAO inventarioDAO = new InventarioDAO();
+            ProductoCartaDAO productoCartaDAO = new ProductoCartaDAO();
         
             // Ejecutamos el DataLoader
-            DataLoader dataLoader = new DataLoader(usuarioDAO, inventarioDAO);
+            DataLoader dataLoader = new DataLoader(usuarioDAO, inventarioDAO, productoCartaDAO);
             dataLoader.cargarDatosIniciales();
             
             

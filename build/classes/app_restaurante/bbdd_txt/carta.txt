@@ -1,0 +1,18 @@
+4e8cf815-be4a-4ead-b59e-38467361ff6e|Croquetas de Jamón|8.5|ENTRANTES
+b48741d7-6e1a-4a0f-af2d-ba1815b2725e|Ensalada César|9.0|ENTRANTES
+dea68d6f-24ec-4323-8077-67e743618f27|Tabla de Quesos|12.5|ENTRANTES
+022ca36e-ea1c-4a4b-a521-eb9cf1b90cda|Entrecot de Ternera|18.0|CARNES
+db47ff4e-5032-434f-8cb2-560b0729c121|Carrillada Ibérica|14.5|CARNES
+e17485fb-9f59-456b-978f-76336575a098|Hamburguesa Angus|11.0|CARNES
+64912ae9-424f-452e-90e0-68cef67a7e3b|Merluza a la Vasca|16.0|PESCADOS
+064f64c2-0f14-4b6a-9bf3-ec6ea3de04f0|Salmón a la Plancha|15.5|PESCADOS
+1acf4634-295e-4b8a-86ce-4a3f18755917|Sepia con Alioli|13.0|PESCADOS
+d6e2dfe1-7c3c-4010-91e0-cdb85215c39f|Chuletón de Ávila (500g)|22.0|BRASAS
+9d17a7d3-9471-4329-8b99-0210948fe678|Costillar BBQ|15.0|BRASAS
+5fcfd65e-216b-46d4-b9a2-478d9ddf572b|Churrasco de Pollo|10.5|BRASAS
+76bb7632-ead9-4477-bad8-e7460287b546|Tarta de Queso|5.5|POSTRES
+83f02baf-448b-4dde-aafb-cbe455533117|Coulant de Chocolate|6.0|POSTRES
+2c80a447-f13e-4bda-bdb2-79ffbf35ab02|Flan Casero|4.5|POSTRES
+807d6cae-ef3a-40c0-bb57-fd39f0f8789c|Cerveza Mahou|2.5|BEBIDAS
+bbfe59fb-265b-4e6b-86c3-0749c9179d39|Vino Rioja (Copa)|3.0|BEBIDAS
+309d034a-4d85-4a9d-990b-f55fcf93dd5a|Agua Mineral|1.8|BEBIDAS

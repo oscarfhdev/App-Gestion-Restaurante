@@ -60,20 +60,20 @@
                   <Image url="@images/comun/logoRedondeado.png" />
                </image>
             </ImageView>
-            <TableView fx:id="tablaGestionDeProductos" layoutX="439.0" layoutY="80.0" prefHeight="383.0" prefWidth="502.0" styleClass="tablaMarron">
+            <TableView fx:id="tablaGestionDeProductos" layoutX="415.0" layoutY="80.0" prefHeight="383.0" prefWidth="526.0" styleClass="tablaMarron">
               <columns>
                 <TableColumn fx:id="columnaNombre" prefWidth="240.0" text="Nombre" />
-                  <TableColumn fx:id="columnaPrecio" minWidth="0.0" prefWidth="138.0" text="Precio" />
-                <TableColumn fx:id="columnaCategoriaProducto" prefWidth="117.0" text="Categoría" />
+                  <TableColumn fx:id="columnaPrecio" minWidth="0.0" prefWidth="75.0" text="Precio" />
+                <TableColumn fx:id="columnaCategoriaProducto" prefWidth="203.0" text="Categoría" />
               </columns>
             </TableView>
             <TextField fx:id="textFieldNombre" layoutX="69.0" layoutY="177.0" prefHeight="29.0" prefWidth="201.0" promptText="Nombre" styleClass="inputMarron" />
             <TextField fx:id="textFieldPrecio" layoutX="69.0" layoutY="239.0" prefHeight="29.0" prefWidth="201.0" promptText="Precio" styleClass="inputMarron" />
-            <ComboBox fx:id="comboboxCategoriaProducto" layoutX="69.0" layoutY="300.0" prefHeight="26.0" prefWidth="201.0" promptText="Categoría" styleClass="comboboxBisqueSuave">
+            <ComboBox fx:id="comboboxCategoriaCarta" layoutX="69.0" layoutY="300.0" prefHeight="26.0" prefWidth="201.0" promptText="Categoría" styleClass="comboboxBisqueSuave">
                <cursor>
                   <Cursor fx:constant="HAND" />
                </cursor></ComboBox>
-            <Button fx:id="botonGuardar" layoutX="311.0" layoutY="160.0" mnemonicParsing="false" onMouseClicked="#guardarCampos" prefHeight="37.0" prefWidth="88.0" text="Guardar">
+            <Button fx:id="botonGuardar" layoutX="300.0" layoutY="157.0" mnemonicParsing="false" onMouseClicked="#guardarProductoCarta" prefHeight="37.0" prefWidth="88.0" text="Guardar">
                <styleClass>
                   <String fx:value="botonMarron" />
                   <String fx:value="blancoCentradoNegrita" />
@@ -82,7 +82,7 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
             </Button>
-            <Button fx:id="botonActualizar" layoutX="311.0" layoutY="160.0" mnemonicParsing="false" onMouseClicked="#actualizarUsuario" prefHeight="37.0" prefWidth="88.0" text="Actualizar">
+            <Button fx:id="botonActualizar" layoutX="300.0" layoutY="157.0" mnemonicParsing="false" onMouseClicked="#actualizarProductoCarta" prefHeight="37.0" prefWidth="88.0" text="Actualizar">
                <styleClass>
                   <String fx:value="botonMarron" />
                   <String fx:value="blancoCentradoNegrita" />
@@ -91,7 +91,7 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
             </Button>
-            <Button fx:id="botonLimpiar1" layoutX="311.0" layoutY="316.0" mnemonicParsing="false" onMouseClicked="#limpiarCampos" prefHeight="37.0" prefWidth="88.0" text="Limpiar">
+            <Button fx:id="botonLimpiar" layoutX="300.0" layoutY="313.0" mnemonicParsing="false" onMouseClicked="#limpiarCampos" prefHeight="37.0" prefWidth="88.0" text="Limpiar">
                <styleClass>
                   <String fx:value="botonMarron" />
                   <String fx:value="blancoCentradoNegrita" />
@@ -100,7 +100,7 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
             </Button>
-            <Button fx:id="botonEliminar" layoutX="311.0" layoutY="238.0" mnemonicParsing="false" onMouseClicked="#eliminarUsuario" prefHeight="37.0" prefWidth="88.0" text="Eliminar">
+            <Button fx:id="botonEliminar" layoutX="300.0" layoutY="235.0" mnemonicParsing="false" onMouseClicked="#eliminarProductoCarta" prefHeight="37.0" prefWidth="88.0" text="Eliminar">
                <styleClass>
                   <String fx:value="botonMarron" />
                   <String fx:value="blancoCentradoNegrita" />

@@ -1,8 +1,11 @@
 package app_restaurante;
 
 import app_restaurante.dao.InventarioDAO;
+import app_restaurante.dao.ProductoCartaDAO;
 import app_restaurante.dao.UsuarioDAO;
+import app_restaurante.modelo.CategoriaCarta;
 import app_restaurante.modelo.CategoriaInventario;
+import app_restaurante.modelo.ProductoCarta;
 import app_restaurante.modelo.ProductoInventario;
 import app_restaurante.modelo.UnidadMedida;
 import app_restaurante.modelo.Usuario;
@@ -12,11 +15,13 @@ public class DataLoader {
 
     private final UsuarioDAO usuarioDAO;
     private final InventarioDAO inventarioDAO;
+    private final ProductoCartaDAO productoCartaDAO; 
 
-    // 2. Constructor con los dao
-    public DataLoader(UsuarioDAO usuarioDAO, InventarioDAO inventarioDAO) {
+    // Constructor actualizado con los 3 DAOs
+    public DataLoader(UsuarioDAO usuarioDAO, InventarioDAO inventarioDAO, ProductoCartaDAO productoCartaDAO) {
         this.usuarioDAO = usuarioDAO;
         this.inventarioDAO = inventarioDAO;
+        this.productoCartaDAO = productoCartaDAO;
     }
 
     // Método principal que llama a los demás
@@ -24,10 +29,11 @@ public class DataLoader {
         System.out.println("--- Iniciando Carga de Datos ---");
         cargarUsuariosPorDefecto();
         cargarInventarioPorDefecto();
+        cargarCartaPorDefecto();
         System.out.println("--- Carga de Datos Finalizada ---");
     }
 
-    // LÓGICA DE USUARIOS (La que ya tenías)
+    // LÓGICA DE USUARIOS
     private void cargarUsuariosPorDefecto() {
         List<Usuario> usuariosActuales = usuarioDAO.obtenerUsuarios();
 
@@ -47,7 +53,7 @@ public class DataLoader {
         }
     }
 
-    // LÓGICA DE INVENTARIO (Nueva)
+    // LÓGICA DE INVENTARIO 
     private void cargarInventarioPorDefecto() {
         // Solo cargamos datos si la lista está vacía
         if (inventarioDAO.obtenerProductos().isEmpty()) {
@@ -109,6 +115,45 @@ public class DataLoader {
             ));
 
             System.out.println("-> 6 Productos de ejemplo creados en el inventario.");
+        }
+    }
+    
+    // --- 3. CARTA (NUEVO) ---
+    private void cargarCartaPorDefecto() {
+        if (productoCartaDAO.obtenerProductos().isEmpty()) {
+            System.out.println("Carta vacía. Creando platos deliciosos...");
+
+            // ENTRANTES
+            productoCartaDAO.guardarProducto(new ProductoCarta("Croquetas de Jamón", 8.50, CategoriaCarta.ENTRANTES));
+            productoCartaDAO.guardarProducto(new ProductoCarta("Ensalada César", 9.00, CategoriaCarta.ENTRANTES));
+            productoCartaDAO.guardarProducto(new ProductoCarta("Tabla de Quesos", 12.50, CategoriaCarta.ENTRANTES));
+
+            // CARNES
+            productoCartaDAO.guardarProducto(new ProductoCarta("Entrecot de Ternera", 18.00, CategoriaCarta.CARNES));
+            productoCartaDAO.guardarProducto(new ProductoCarta("Carrillada Ibérica", 14.50, CategoriaCarta.CARNES));
+            productoCartaDAO.guardarProducto(new ProductoCarta("Hamburguesa Angus", 11.00, CategoriaCarta.CARNES));
+
+            // PESCADOS
+            productoCartaDAO.guardarProducto(new ProductoCarta("Merluza a la Vasca", 16.00, CategoriaCarta.PESCADOS));
+            productoCartaDAO.guardarProducto(new ProductoCarta("Salmón a la Plancha", 15.50, CategoriaCarta.PESCADOS));
+            productoCartaDAO.guardarProducto(new ProductoCarta("Sepia con Alioli", 13.00, CategoriaCarta.PESCADOS));
+
+            // A LA BRASA
+            productoCartaDAO.guardarProducto(new ProductoCarta("Chuletón de Ávila (500g)", 22.00, CategoriaCarta.BRASAS));
+            productoCartaDAO.guardarProducto(new ProductoCarta("Costillar BBQ", 15.00, CategoriaCarta.BRASAS));
+            productoCartaDAO.guardarProducto(new ProductoCarta("Churrasco de Pollo", 10.50, CategoriaCarta.BRASAS));
+
+            // POSTRES
+            productoCartaDAO.guardarProducto(new ProductoCarta("Tarta de Queso", 5.50, CategoriaCarta.POSTRES));
+            productoCartaDAO.guardarProducto(new ProductoCarta("Coulant de Chocolate", 6.00, CategoriaCarta.POSTRES));
+            productoCartaDAO.guardarProducto(new ProductoCarta("Flan Casero", 4.50, CategoriaCarta.POSTRES));
+
+            // BEBIDAS
+            productoCartaDAO.guardarProducto(new ProductoCarta("Cerveza Mahou", 2.50, CategoriaCarta.BEBIDAS));
+            productoCartaDAO.guardarProducto(new ProductoCarta("Vino Rioja (Copa)", 3.00, CategoriaCarta.BEBIDAS));
+            productoCartaDAO.guardarProducto(new ProductoCarta("Agua Mineral", 1.80, CategoriaCarta.BEBIDAS));
+
+            System.out.println("-> Carta inicial creada con éxito.");
         }
     }
 }

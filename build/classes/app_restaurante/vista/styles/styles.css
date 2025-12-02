@@ -297,7 +297,7 @@
     -fx-background-color: #ffb3b3; /* Rojo un poco más oscuro al pasar mouse */
 }
 
-/* IMPORTANTE: La selección debe ganar siempre */
+/* La selección tiene prioridad*/
 .tablaMarron .table-row-cell:selected.filaAlertaStock {
     -fx-background-color: #775134; /* Se mantiene marrón al seleccionar */
     -fx-text-fill: white;

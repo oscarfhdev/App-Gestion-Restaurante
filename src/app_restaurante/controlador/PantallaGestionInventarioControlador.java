@@ -302,8 +302,6 @@ public class PantallaGestionInventarioControlador implements Initializable {
     private void mostrarError(String mensaje) {
         labelError.setText(mensaje);
         labelError.setVisible(true);
-        // Opcional: aseguramos estilo rojo aquí por si acaso
-        labelError.setStyle("-fx-text-fill: red; -fx-font-weight: bold;"); 
     }
 
     private void limpiarError() {
