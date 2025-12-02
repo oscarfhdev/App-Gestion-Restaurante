@@ -167,17 +167,7 @@ public class PantallaGestionComandasControlador implements Initializable {
         stage.setTitle("Mesón Fernández - Inicio");
         stage.centerOnScreen();
     }
-
-    // --- OTROS BOTONES (Pendientes) ---
-    @FXML
-    private void cobrarComandaIndependiente(MouseEvent event) {
-        Alert alert = new Alert(Alert.AlertType.INFORMATION);
-        alert.setTitle("Info");
-        alert.setHeaderText(null);
-        alert.setContentText("Funcionalidad no implementada en esta demo.");
-        alert.showAndWait();
-    }
-    
+   
     public void inicializarFechayHora(){
         DateTimeFormatter formatoHora = DateTimeFormatter.ofPattern("HH:mm:ss");
         DateTimeFormatter formatoFecha = DateTimeFormatter.ofPattern("dd/MM/yyyy");
@@ -188,5 +178,20 @@ public class PantallaGestionComandasControlador implements Initializable {
         }));
         reloj.setCycleCount(Timeline.INDEFINITE);
         reloj.play();
+    }
+
+    @FXML
+    private void verHistorialPagos(MouseEvent event) throws IOException {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/app_restaurante/vista/pantallaHistorialPagos.fxml"));
+        Parent root = loader.load();
+        
+        //PantallaHistorialControlador controlador = loader.getController();
+        // controlador.setUsuarioLogueado(usuarioLogueado);
+        
+        Scene escena = new Scene(root);
+        // Usamos el botón que pulsaste para obtener la ventana
+        Stage stage = (Stage) botonHistorialCuentasPagadas.getScene().getWindow();
+        stage.setScene(escena);
+        stage.setTitle("Mesón Fernández - Historial de Caja");
     }
 }

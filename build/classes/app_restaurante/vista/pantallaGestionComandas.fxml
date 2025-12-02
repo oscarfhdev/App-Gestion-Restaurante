@@ -155,16 +155,7 @@
                      </cursor>
                   </Pane>
                </children></Pane>
-            <Button fx:id="botonCobrarComandasIndividuales" layoutX="103.0" layoutY="315.0" mnemonicParsing="false" onMouseClicked="#cobrarComandaIndependiente" prefHeight="37.0" prefWidth="221.0" text="Cobrar Comandas Individuales">
-               <styleClass>
-                  <String fx:value="botonMarron" />
-                  <String fx:value="blancoCentradoNegrita" />
-               </styleClass>
-               <cursor>
-                  <Cursor fx:constant="HAND" />
-               </cursor>
-            </Button>
-            <Button fx:id="botonHistorialCuentasPagadas" layoutX="103.0" layoutY="369.0" mnemonicParsing="false" onMouseClicked="#cobrarComandaIndependiente" prefHeight="37.0" prefWidth="221.0" text="Historial de Cuentas Pagadas">
+            <Button fx:id="botonHistorialCuentasPagadas" layoutX="104.0" layoutY="289.0" mnemonicParsing="false" onMouseClicked="#verHistorialPagos" prefHeight="37.0" prefWidth="221.0" text="Historial de Cuentas Pagadas">
                <styleClass>
                   <String fx:value="botonBisque" />
                   <String fx:value="colorMarronCentradoNegrita" />
@@ -183,12 +174,12 @@
                   <Font name="DejaVu Sans Bold" size="16.0" />
                </font>
             </Label>
-            <Label layoutX="97.0" layoutY="157.0" prefHeight="86.0" prefWidth="231.0" styleClass="colorTextoMarronCentrado" text="Pulsa sobre las mesas para ver la información" textAlignment="CENTER" wrapText="true">
+            <Label layoutX="98.0" layoutY="203.0" prefHeight="86.0" prefWidth="231.0" styleClass="colorTextoMarronCentrado" text="Pulsa sobre las mesas para ver la información" textAlignment="CENTER" wrapText="true">
                <font>
                   <Font name="DejaVu Sans Bold" size="16.0" />
                </font>
             </Label>
-            <ImageView fitHeight="62.0" fitWidth="85.0" layoutX="182.0" layoutY="109.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="62.0" fitWidth="85.0" layoutX="183.0" layoutY="155.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@images/gestion_comanda/tocar.png" />
                </image>
