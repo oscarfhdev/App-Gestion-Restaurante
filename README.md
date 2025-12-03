@@ -1,7 +1,3 @@
-Aquí lo tienes **todo junto**, sin separaciones adicionales y listo para **copiar y pegar directamente** en tu README de GitHub:
-
----
-
 # 🍽️ App Gestión Restaurante - Mesón Fernández
 
 <p align="center">
@@ -53,3 +49,36 @@ El diseño sigue principios de **usabilidad** y estándares de programación, ut
 * **Login seguro:** Pantalla de inicio de sesión para proteger el acceso.
 * **Carta dinámica:** Los cambios realizados por los administradores se reflejan inmediatamente en la vista de la carta.
 
+---
+
+## 🛠️ Tecnologías utilizadas
+
+* **Lenguaje:** Java (JDK 21)
+* **Framework UI:** JavaFX & SceneBuilder
+* **IDE:** NetBeans
+* **Estilos:** CSS personalizado (`styles.css`)
+* **Persistencia:** Sistema de archivos (`.txt`) sin base de datos externa (Patrón DAO)
+
+---
+
+## 📂 Estructura del proyecto
+
+Patrón de arquitectura **MVC (Modelo-Vista-Controlador)**:
+
+```
+src/
+└── app_restaurante/
+    ├── modelo/         # Clases POJO (Usuario, Producto, Mesa, Pedido)
+    ├── vista/          # Archivos FXML y hojas de estilo CSS
+    ├── controlador/    # Lógica de negocio y gestión de eventos
+    └── dao/            # Acceso a datos (UsuarioDAO, InventarioDAO, ProductoCartaDAO)
+```
+
+---
+
+## 🚀 Instalación y ejecución
+
+### Requisitos
+
+* Java 21 (o compatible)
+* JavaFX 21
