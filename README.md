@@ -82,3 +82,26 @@ src/
 
 * Java 21 (o compatible)
 * JavaFX 21
+
+--- 
+
+## 📸 Interfaz de usuario
+
+* Inicio de sesión
+* Mapa de mesas (panel visual con estados)
+* Panel principal (botones habilitados según rol)
+* Alerta de stock (filas rojas indican stock bajo)
+* Cobro separado (división de cuenta fácil)
+
+---
+
+## 👤 Autor
+
+**Óscar Fernández**
+
+---
+
+## 📄 Licencia
+
+Este proyecto está bajo la **Licencia MIT**.
+Consulta el archivo `LICENSE` para más detalles.
